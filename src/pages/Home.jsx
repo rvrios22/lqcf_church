@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <h1>La Quinta Christian Fellowship Church</h1>
-      <img alt="LQCF Church" src="" />
+      <img alt="LQCF Church" src="./lqcfHome.jpg" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci
         odio asperiores veniam excepturi, sed inventore nisi vitae repellat
