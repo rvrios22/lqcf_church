@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import emailjs from "@emailjs/browser";
 
 export default function Prayer() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -47,12 +50,18 @@ export default function Prayer() {
           pray for you.
         </p>
         <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
+          <label>Name: </label>
+          <input id='name'type="text" name="name" placeholder="What's Your Name?" required
+            value={name} onChange={(e) => setName(e.target.value)}
+          />
+          <label>Email: </label>
+          <input id='email'type="email" name="email" placeholder="What's Your Email?" 
+            value={email} onChange={(e) => setEmail(e.target.value)}
+          />
+          <label>Message: </label>
+          <textarea name="message" placeholder="How Can We Pray For You?" required
+            value={message} onChange={(e) => setMessage(e.target.value)}
+          />
           <input type="submit" value="Send" />
         </form>
       </div>
