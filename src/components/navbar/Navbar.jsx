@@ -11,15 +11,21 @@ import { useOnHoverOutside } from '../../hooks/useOnHoverOutside';
 export default function Navbar() {
   const dropDownRef = useRef(null);
   const [isMinistryDropDownOpen, setMinistryDropDownOpen] = useState(false);
+  const [isWhoWeAreDropDownOpen, setWhoWeAreDropDownOpen] = useState(false);
+
+  const closeHoverWhoWeAre = () => {
+    setWhoWeAreDropDownOpen(false);
+  };
 
   const closeHoverMinistry = () => {
     setMinistryDropDownOpen(false);
   };
 
   useOnHoverOutside(dropDownRef, closeHoverMinistry);
-
+  useOnHoverOutside(dropDownRef, closeHoverWhoWeAre);
+  
   return (
-    <div>
+    <div ref={dropDownRef}>
       <Link to="/">LQCF Church</Link>
       {navbarData.map((data) => (
         <ul>
@@ -28,10 +34,10 @@ export default function Navbar() {
           </Link>
         </ul>
       ))}
-      <WhoWeAre />
-      <h3 onMouseOver={() => setMinistryDropDownOpen(true)}>Ministry</h3>
+      <h4 onMouseOver={() => setWhoWeAreDropDownOpen(true)}>Who We Are</h4>
+      {isWhoWeAreDropDownOpen && <WhoWeAre />}
+      <h4 onMouseOver={() => setMinistryDropDownOpen(true)}>Ministry</h4>
       {isMinistryDropDownOpen && <Ministry />}
-      
     </div>
   );
 }
