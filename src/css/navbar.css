@@ -1,0 +1,13 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5em;
+}
+
+.navbar-list {
+    padding-right: 1em;
+}
+
+.drop-down-container {
+    border: 2px solid red;
+}

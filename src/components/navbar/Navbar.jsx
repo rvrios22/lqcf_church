@@ -1,4 +1,6 @@
-import React, { useRef, useState} from "react";
+import React, { useRef, useState } from "react";
+
+import "../../css/navbar.css";
 
 import { Link } from "react-router-dom";
 import { navbarData } from "./navbarData";
@@ -6,7 +8,7 @@ import { navbarData } from "./navbarData";
 import WhoWeAre from "../whoWeAre/WhoWeAre";
 import Ministry from "../ministry/Ministry";
 
-import { useOnHoverOutside } from '../../hooks/useOnHoverOutside';
+import { useOnHoverOutside } from "../../hooks/useOnHoverOutside";
 
 export default function Navbar() {
   const dropDownRef = useRef(null);
@@ -23,21 +25,35 @@ export default function Navbar() {
 
   useOnHoverOutside(dropDownRef, closeHoverMinistry);
   useOnHoverOutside(dropDownRef, closeHoverWhoWeAre);
-  
+
   return (
-    <div ref={dropDownRef}>
-      <Link to="/">LQCF Church</Link>
-      {navbarData.map((data) => (
-        <ul>
+    <div className="navbar-container">
+      <div>
+        <Link to="/">LQCF Church</Link>
+      </div>
+      <div ref={dropDownRef}>
+        {navbarData.map((data) => (
           <Link to={data.link}>
-            <li key={data.name}>{data.name}</li>
+            <span className="navbar-list" key={data.name}>
+              {data.name}
+            </span>
           </Link>
-        </ul>
-      ))}
-      <h4 onMouseOver={() => setWhoWeAreDropDownOpen(true)}>Who We Are</h4>
-      {isWhoWeAreDropDownOpen && <WhoWeAre />}
-      <h4 onMouseOver={() => setMinistryDropDownOpen(true)}>Ministry</h4>
-      {isMinistryDropDownOpen && <Ministry />}
+        ))}
+        <span
+          className="navbar-list"
+          onMouseOver={() => setWhoWeAreDropDownOpen(true)}
+        >
+          Who We Are
+        </span>
+        {isWhoWeAreDropDownOpen && <WhoWeAre />}
+        <span
+          className="navbar-list"
+          onMouseOver={() => setMinistryDropDownOpen(true)}
+        >
+          Ministry
+        </span>
+        {isMinistryDropDownOpen && <Ministry />}
+      </div>
     </div>
   );
 }

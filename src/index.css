@@ -41,6 +41,29 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+
+a:active {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -59,9 +82,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {

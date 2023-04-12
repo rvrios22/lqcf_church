@@ -8,9 +8,9 @@ import '../css/home.css'
 export default function Home() {
   return (
     <div>
-      <h1>La Quinta Christian Fellowship Church</h1>
-      <img alt="LQCF Church" src="./lqcfHome.jpg" />
-      <p>
+      <h1 className="header">La Quinta Christian Fellowship Church</h1>
+      <img className="general-image landing-image" alt="LQCF Church" src="./lqcfHome.jpg" />
+      <p className="general-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci
         odio asperiores veniam excepturi, sed inventore nisi vitae repellat
         laboriosam aperiam facilis dolores perspiciatis, aliquid ab, explicabo
@@ -21,9 +21,9 @@ export default function Home() {
       </p>
       <Map />
       <h3>What's Going On</h3>
+      <div className="event-container">
       {homeEvents.map((event) => (
-        <div className="event-square">
-          <div className="square">
+          <div className="event-square">
             <Link to={event.link}>
                <img src={event.photo} 
                alt={event.alt} 
@@ -31,8 +31,8 @@ export default function Home() {
             </Link>
             <p>{event.name}</p>
           </div>
-        </div>
       ))}
+      </div>
     </div>
   );
 }
