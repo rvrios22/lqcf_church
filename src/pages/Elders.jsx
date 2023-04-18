@@ -2,6 +2,8 @@ import React from 'react'
 
 import { elderPage } from '../mappingData'
 
+import "../css/elder.css";
+
 export default function Elders() {
   return (
     <div>
@@ -11,13 +13,13 @@ export default function Elders() {
           <div className='elder-image-container'>
             <img 
              className='general-image elder-image'
-             src=''
+             src='./temp.jpg'
              alt={elder.name}
             />
-            <h4>{elder.name}</h4>
+            <h4 className='sub-header'>{elder.name}</h4>
           </div>
           <div className='elder-bio'>
-            <p>{elder.bio}</p>
+            <p className='general-text elder-text'>{elder.bio}</p>
           </div>
         </div>
       ))}

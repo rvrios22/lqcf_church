@@ -1,0 +1,7 @@
+.elder-text {
+    margin: 0;
+}
+
+p.general-text.elder-text {
+    margin: -.5em .25em .75em;
+}

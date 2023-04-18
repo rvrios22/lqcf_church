@@ -14,18 +14,9 @@ export default function map() {
 
   return (
     <div>
-      <h3 className="sub-header">Service and Times:</h3>
       <div className="map-container">
-        <div>
-          <ul>
-            <li>Sunday Service: 10:00 AM</li>
-            <li>Wednesday Service: 6:30 PM</li>
-            <li>Bible Study: 9:00 AM</li>
-          </ul>
-        </div>
-        <div>
           {!isLoaded ? (
-            <h2>Loading...</h2>
+            <h3 className="sub-header">Loading...</h3>
           ) : (
             <GoogleMap
               mapContainerClassName="map-container"
@@ -35,7 +26,6 @@ export default function map() {
               <MarkerF position={center} />
             </GoogleMap>
           )}
-        </div>
       </div>
     </div>
   );

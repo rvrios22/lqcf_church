@@ -1,3 +1,26 @@
-.footer {
-    background-color: gray;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+.map-container {
+    margin: 0 auto;
+    border-radius: 7px;
+    height: 20vh;
+    width: 95%;
+}
+
+.sub-header {
+    font-family: 'Raleway';
+    text-align: center;
+    margin: .25em;
+}
+
+.general-text {
+    font-family: 'Lato';
+    text-align: center;
+    margin: .25em;
+}
+
+.rios-link {
+    font-size: .5em;
+    margin: .5em;
 }
