@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 
+import MenuIcon from '@mui/icons-material/Menu';
+
 import "../../css/navbar.css";
 
 import { Link } from "react-router-dom";
@@ -25,35 +27,40 @@ export default function Navbar() {
 
   useOnHoverOutside(dropDownRef, closeHoverMinistry);
   useOnHoverOutside(dropDownRef, closeHoverWhoWeAre);
-
+//last edit: removed the Ministry component from the container 
   return (
-    <div className="navbar-container">
-      <div>
-        <Link to="/">LQCF Church</Link>
-      </div>
-      <div ref={dropDownRef}>
-        {navbarData.map((data) => (
-          <Link to={data.link}>
-            <span className="navbar-list" key={data.name}>
-              {data.name}
-            </span>
-          </Link>
-        ))}
-        <span
-          className="navbar-list"
-          onMouseOver={() => setWhoWeAreDropDownOpen(true)}
-        >
-          Who We Are
-        </span>
-        {isWhoWeAreDropDownOpen && <WhoWeAre />}
-        <span
-          className="navbar-list"
-          onMouseOver={() => setMinistryDropDownOpen(true)}
-        >
-          Ministry
-        </span>
-        {isMinistryDropDownOpen && <Ministry />}
-      </div>
+    <>
+    <div className="mobile-navbar-container">
+      <MenuIcon />
     </div>
+      <div className="navbar-container">
+        <div>
+          <Link to="/">LQCF Church</Link>
+        </div>
+        <div ref={dropDownRef}>
+          {navbarData.map((data) => (
+            <Link to={data.link}>
+              <span className="navbar-list" key={data.name}>
+                {data.name}
+              </span>
+            </Link>
+          ))}
+          <span
+            className="navbar-list"
+            onMouseOver={() => setWhoWeAreDropDownOpen(true)}
+          >
+            Who We Are
+          </span>
+          {isWhoWeAreDropDownOpen && <WhoWeAre />}
+          <span
+            className="navbar-list"
+            onMouseOver={() => setMinistryDropDownOpen(true)}
+          >
+            Ministry
+          </span>
+        </div>
+      </div>
+          {isMinistryDropDownOpen && <Ministry />}
+    </>
   );
 }

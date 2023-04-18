@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
+
+import './index.css';
+import './App.css';
+
+
 import ErrorPage from './pages/ErrorPage';
 
 import Root from './pages/Root';
@@ -17,7 +22,6 @@ import Missionary from './pages/Missionary';
 import Elders from './pages/Elders';
 import WhatWeBelieve from './pages/WhatWeBelieve';
 
-import './index.css';
 import NavbarFooterWrapper from './components/NavbarFooterWrapper/NavbarFooterWrapper';
 
 const router = createBrowserRouter([

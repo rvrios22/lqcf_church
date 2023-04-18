@@ -1,13 +1,21 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    margin: 1.5em;
+    padding: 1.5em;
+    background-color: brown;
 }
 
 .navbar-list {
-    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .drop-down-container {
-    border: 2px solid red;
+    background-color: yellow;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        display: none;
+    }
 }

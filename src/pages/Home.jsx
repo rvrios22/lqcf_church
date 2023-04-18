@@ -19,17 +19,18 @@ export default function Home() {
         voluptas quo, nemo repudiandae officia natus, blanditiis autem
         reprehenderit quibusdam eum pariatur nesciunt.
       </p>
-      <Map />
-      <h3>What's Going On</h3>
+      {/* <Map /> */}
+      <h3 className="sub-header">What's Going On</h3>
       <div className="event-container">
       {homeEvents.map((event) => (
           <div className="event-square">
             <Link to={event.link}>
-               <img src={event.photo} 
+               <img src='/temp.jpg'
                alt={event.alt} 
+               className="general-image event-image"
              />
             </Link>
-            <p>{event.name}</p>
+            <p className="general-text">{event.name}</p>
           </div>
       ))}
       </div>
