@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Zeyada&display=swap");
 
 .header {
     font-family: 'Raleway';
@@ -24,4 +25,14 @@
     font-family: 'Lato';
     text-align: center;
     margin: .25em;
+}
+
+.bible-text {
+    font-family: 'Dancing Script';
+    font-size: 1.25em;
+    text-align: center;
+}
+
+label, input, textarea {
+    display: block;
 }

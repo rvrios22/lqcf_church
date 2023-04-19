@@ -1,10 +1,12 @@
 import React from "react";
 
+import '../css/giving.css'
+
 export default function Giving() {
   return (
     <div>
       <h1 className="header">Tithes and Offerings</h1>
-      <div>
+      <div className="giving-container">
         <p className="general-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio neque
           nisi eius animi maxime fuga minima a asperiores. Molestias nostrum
@@ -14,17 +16,16 @@ export default function Giving() {
           ipsam aut voluptates porro, culpa, cumque ut delectus officiis maxime
           ipsa sequi.
         </p>
-      </div>
-      <div>
-        <h2 className="sub-header">Ways to Give:</h2>
-        <ul>
-          <li>You can Zelle us at:</li>
-          <li>
+        <div>
+          <h3 className="sub-header">Ways to Give:</h3>
+
+          <p className="general-text">You can Zelle us at:</p>
+          <p className="general-text">
             Give in person during our Sunday morning or Wednesday evening
             service
-          </li>
-          <li>Mail your offering to: </li>
-        </ul>
+          </p>
+          <p className="general-text">Mail your offering to: </p>
+        </div>
       </div>
     </div>
   );

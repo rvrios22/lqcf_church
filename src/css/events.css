@@ -1,0 +1,27 @@
+.event-container {
+    width: 80%;
+    margin: 1em auto;
+    /* border: 1px groove black;
+    border-radius: 7px; */
+}
+
+.event-spacer {
+    width: 60%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1em;
+}
+
+p.general-text.event-text {
+    margin: -.5em .25em .75em;
+    text-align: left;
+}
+
+p.general-text.event-text:last-of-type {
+    font-size: .75em;
+    text-align: center;
+    text-decoration: underline;
+}
+

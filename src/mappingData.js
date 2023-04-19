@@ -70,6 +70,26 @@ export const eventPage = [
     {
         name: 'Men Study',
         date: 'April 25, 2023',
-        description: 'Asiety of God'
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae sapiente! Repellendus, quisquam! Nemo molestiae fugit nihil voluptates, quia distinctio atque cum?'
+    },
+    {
+        name: 'Men Study',
+        date: 'April 25, 2023',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae'
+    },
+    {
+        name: 'Men Study',
+        date: 'April 25, 2023',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis'
+    },
+    {
+        name: 'Men Study',
+        date: 'April 25, 2023',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis'
+    },
+    {
+        name: 'Men Study',
+        date: 'April 25, 2023',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae sapiente! Repellendus, quisquam! Nemo molestiae fugit nihil voluptates, quia distinctio atque cum?'
     },
 ]

@@ -1,0 +1,37 @@
+.prayer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.prayer-label, .prayer-input {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Lato';
+}
+
+
+.prayer-input {
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.prayer-input:last-of-type {
+    margin-bottom: .75em;
+}
+
+button.prayer-input {
+    display: block;
+    width: 50%;
+    height: 2em;
+    background-color: white;
+    border: 2px groove black;
+    border-radius: 7px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button.prayer-input:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
