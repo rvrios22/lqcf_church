@@ -33,6 +33,11 @@
     text-align: center;
 }
 
+.general-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 label, input, textarea {
     display: block;
 }

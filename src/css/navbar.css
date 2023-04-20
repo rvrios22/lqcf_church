@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .navbar-list {
@@ -10,11 +10,11 @@
 }
 
 .drop-down-container {
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .navbar-container {
         display: none;
     }

@@ -6,7 +6,7 @@ export default function Giving() {
   return (
     <div>
       <h1 className="header">Tithes and Offerings</h1>
-      <div className="giving-container">
+      <div className="general-container">
         <p className="general-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio neque
           nisi eius animi maxime fuga minima a asperiores. Molestias nostrum

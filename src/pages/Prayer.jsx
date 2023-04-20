@@ -33,7 +33,7 @@ export default function Prayer() {
   return (
     <div>
       <h1 className="header">Why Should We Pray?</h1>
-      <div className="prayer-container">
+      <div className="general-container">
         <p className="general-text">
           God commands that we join with other faithful Christians to pray over
           those who are seeking prayer.

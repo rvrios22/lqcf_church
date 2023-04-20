@@ -17,6 +17,24 @@ export const homeEvents = [
         link: "womens-study",
         alt: "Women's study"
     },
+    {
+        name: "Women's Study",
+        photo: "womensStudy",
+        link: "womens-study",
+        alt: "Women's study"
+    },
+    {
+        name: "Women's Study",
+        photo: "womensStudy",
+        link: "womens-study",
+        alt: "Women's study"
+    },
+    {
+        name: "Women's Study",
+        photo: "womensStudy",
+        link: "womens-study",
+        alt: "Women's study"
+    },
 ]
 
 export const elderPage = [

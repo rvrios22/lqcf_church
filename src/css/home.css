@@ -1,9 +1,29 @@
-.home-container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .landing-image {
     object-fit: cover;
 }
 
+.empty-spacer {
+    height: .5em;
+}
+
+.event-image {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+@media (min-width: 600px) {
+    .home-events-container {
+        width: 80%;
+        margin: 1em auto 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    .event-image {
+        border-radius: 7px;
+        max-width: 100%;
+    }
+}

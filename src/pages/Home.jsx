@@ -14,7 +14,7 @@ export default function Home() {
         alt="LQCF Church"
         src="./lqcfHome.jpg"
       />
-      <div className="home-container">
+      <div className="general-container">
         <p className="general-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
           adipisci odio asperiores veniam excepturi, sed inventore nisi vitae
@@ -25,6 +25,7 @@ export default function Home() {
           blanditiis autem reprehenderit quibusdam eum pariatur nesciunt.
         </p>
       </div>
+      <div className="empty-spacer"></div>
       {/* <Map /> */}
       <h3 className="sub-header">What's Going On</h3>
       <div className="home-events-container">
@@ -34,7 +35,7 @@ export default function Home() {
               <img
                 src="/temp.jpg"
                 alt={event.alt}
-                className="general-image event-image"
+                className="event-image"
               />
             </Link>
             <p className="general-text">{event.name}</p>
