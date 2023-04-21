@@ -2,19 +2,25 @@ import React from "react";
 
 import Map from "../map/map";
 
-import '../../App.css';
+import "../../App.css";
 import "../../css/footer.css";
 
 export default function Footer() {
   return (
     <div className="footer">
-      <h3 className="sub-header">Service and Times:</h3>
-      <div>      
-          <p className="general-text">Sunday Bible Study: 9:00 AM</p>
-          <p className="general-text">Sunday Service: 10:00 AM</p>
-          <p className="general-text">Wednesday Service: 6:30 PM</p>
+      <div className="footer-grid-container">
+        <div className="footer-grid-item">
+          <h3 className="footer-header">Service and Times:</h3>
+          <p className="footer-general-text">Sunday Bible Study: 9:00 AM</p>
+          <p className="footer-general-text">Sunday Service: 10:00 AM</p>
+          <p className="footer-general-text">Wednesday Service: 6:30 PM</p>
+        </div>
+        <div className="footer-gird-item">
+          <p className="footer-general-text">Physical Address:</p>
+          <p className="footer-general-text">50800 Calle Paloma, La Quinta CA 92253</p>
+        </div>
+        <Map />
       </div>
-      <Map />
       <p className="general-text rios-link">
         Developed and maintained by{" "}
         <a
@@ -22,7 +28,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-           RIOSDEVELOPMENT
+          RIOSDEVELOPMENT
         </a>
       </p>
     </div>

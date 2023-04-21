@@ -14,7 +14,7 @@ export default function map() {
 
   return (
     <div>
-      <div className="map-container">
+      <div className="footer-grid-item">
           {!isLoaded ? (
             <h3 className="sub-header">Loading...</h3>
           ) : (
