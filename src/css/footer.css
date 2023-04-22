@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 
+.footer {
+    background-color: rgba(54, 187, 227, 0.554);
+}
+
 .map-container {
     margin: 0 auto;
     border-radius: 7px;
@@ -22,21 +26,27 @@
 
 .rios-link {
     font-size: .5em;
-    margin: .5em;
+    margin: 0;
 }
 
 @media (min-width: 600px) {
-    .footer-grid-container {
+    .footer {
+        font-size: .75em;
+    }
+    .footer-grid-container, .map-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 3fr;
-        width: 80%;
+        grid-template-columns: 1fr 1fr 2fr;
+        width: 95%;
         margin: 1em auto;
-        align-items: center;
-        column-gap: 1em;
+        padding-top: .5em;
+        align-items: start;
+        column-gap: 1.5em;
     }
 
     .map-container {
-        min-height: 25vh;
+        /* min-height: 25vh; */
         width: 100%;
+        align-self: center;
+        
     }
 }

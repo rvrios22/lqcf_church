@@ -41,3 +41,17 @@
 label, input, textarea {
     display: block;
 }
+
+.flex-footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-child {
+    flex: auto;
+}
+
+.footer-child {
+    bottom: 2vh;
+}

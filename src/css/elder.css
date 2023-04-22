@@ -1,7 +1,9 @@
-p.general-text.elder-text {
+.elder-text {
+    font-family: 'Lato';
+    text-align: center;
     margin: -.5em .25em .75em;
 }
 
-img.general-image.elder-image {
-    min-width: 90%;
+.elder-image {
+    border-radius: 7px;
 }

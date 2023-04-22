@@ -12,14 +12,14 @@ export default function Elders() {
         <div className='general-container'>
           <div className='elder-image-container'>
             <img 
-             className='general-image elder-image'
+             className='elder-image'
              src='./temp.jpg'
              alt={elder.name}
             />
             <h4 className='sub-header'>{elder.name}</h4>
           </div>
           <div className='elder-bio'>
-            <p className='general-text elder-text'>{elder.bio}</p>
+            <p className='elder-text'>{elder.bio}</p>
           </div>
         </div>
       ))}
