@@ -14,6 +14,10 @@
     margin-top: 1em;
 }
 
+.events-parent div:last-child hr {
+    display: none;
+}
+
 p.general-text.event-text {
     margin: -.5em .25em .75em;
     text-align: left;

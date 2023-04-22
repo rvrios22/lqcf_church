@@ -6,7 +6,7 @@ import "../css/events.css";
 
 export default function Events() {
   return (
-    <div>
+    <div className="events-parent">
       <h3 className="sub-header">Upcoming Events:</h3>
       {eventPage.map((event) => (
         <div className="event-container">

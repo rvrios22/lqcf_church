@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <h1 className="header">La Quinta Christian Fellowship Church</h1>
       <img
-        className="general-image landing-image"
+        className="landing-image"
         alt="LQCF Church"
         src="./lqcfHome.jpg"
       />

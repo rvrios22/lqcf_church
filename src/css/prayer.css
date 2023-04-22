@@ -30,3 +30,9 @@ button.prayer-input:hover {
     color: white;
     cursor: pointer;
 }
+
+@media (min-width: 1000px) {
+    .bible-text {
+        margin: .25em auto;
+    }
+}
