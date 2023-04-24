@@ -9,7 +9,7 @@ export default function Elders() {
     <div>
       <h1 className='header'>Meet Our Pastors</h1>
       {elderPage.map((elder) => (
-        <div className='general-container'>
+        <div className='general-container elder-container'>
           <div className='elder-image-container'>
             <img 
              className='elder-image'

@@ -58,6 +58,7 @@ export default function Navbar() {
         </div>
       </div>
       {isMinistryDropDownOpen && <Ministry />}
+      <hr />
     </>
   );
 }
