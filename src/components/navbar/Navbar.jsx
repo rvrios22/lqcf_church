@@ -12,7 +12,8 @@ import { useOnHoverOutside } from "../../hooks/useOnHoverOutside";
 import MobileNavbar from "../mobileNavbar/MobileNavbar";
 
 export default function Navbar() {
-  const dropDownRef = useRef(null);
+  const ministryRef = useRef(null);
+  const whoWeAreRef = useRef(null);
   const [isMinistryDropDownOpen, setMinistryDropDownOpen] = useState(false);
   const [isWhoWeAreDropDownOpen, setWhoWeAreDropDownOpen] = useState(false);
 
@@ -24,17 +25,35 @@ export default function Navbar() {
     setMinistryDropDownOpen(false);
   };
 
-  useOnHoverOutside(dropDownRef, closeHoverMinistry);
-  useOnHoverOutside(dropDownRef, closeHoverWhoWeAre);
+  useOnHoverOutside(ministryRef, closeHoverMinistry);
+  useOnHoverOutside(whoWeAreRef, closeHoverWhoWeAre);
   //last edit: removed the Ministry component from the container
   return (
-    <>
+    <div className="navbar-container">
       <MobileNavbar />
-      <div className="navbar-container">
+      <div className="navbar-flex-container">
         <div>
           <Link to="/">LQCF Church</Link>
         </div>
-        <div ref={dropDownRef}>
+        <div>
+          <div ref={whoWeAreRef} className="drop-down-ref">
+            {isWhoWeAreDropDownOpen && <WhoWeAre />}
+            <span
+              className="navbar-list"
+              onMouseOver={() => setWhoWeAreDropDownOpen(true)}
+            >
+              Who We Are
+            </span>
+          </div>
+          <div ref={ministryRef} className="drop-down-ref">
+            <span
+              className="navbar-list"
+              onMouseOver={() => setMinistryDropDownOpen(true)}
+            >
+              Ministry
+            </span>
+            {isMinistryDropDownOpen && <Ministry />}
+          </div>
           {navbarData.map((data) => (
             <Link to={data.link}>
               <span className="navbar-list" key={data.name}>
@@ -42,23 +61,9 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
-          <span
-            className="navbar-list"
-            onMouseOver={() => setWhoWeAreDropDownOpen(true)}
-          >
-            Who We Are
-          </span>
-          {isWhoWeAreDropDownOpen && <WhoWeAre />}
-          <span
-            className="navbar-list"
-            onMouseOver={() => setMinistryDropDownOpen(true)}
-          >
-            Ministry
-          </span>
         </div>
       </div>
-      {isMinistryDropDownOpen && <Ministry />}
-      <hr />
-    </>
+      <hr className="navbar-divider" />
+    </div>
   );
 }

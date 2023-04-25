@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 function Ministry() {
   return (
-    <div className="drop-down-container">
+    <div className="drop-down-container ministry">
       {ministry.map((ministry) => (
         <Link to={ministry.link}>
-          <div key={ministry.name}>{ministry.name}</div>
+          <div className="drop-down-item" key={ministry.name}>{ministry.name}</div>
         </Link>
       ))}
     </div>
