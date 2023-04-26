@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 
+import Swal from 'sweetalert2'
+
 import emailjs from "@emailjs/browser";
 
 import "../css/prayer.css";
@@ -10,13 +12,20 @@ export default function Prayer() {
   const [message, setMessage] = useState("");
   const form = useRef();
 
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "center",
+    showConfirmButton: false,
+    timer: 4000,
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMLATE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
         import.meta.env.VITE_PUBLIC_KEY
       )
@@ -28,6 +37,16 @@ export default function Prayer() {
           console.log(error.text);
         }
       );
+
+    Toast.fire({
+      title: 'Thank you for your request. We will keep you in prayer and reach out if we see fit. God bless!',
+      background: '#F5F6F7',
+      color: 'black'
+    })
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -58,7 +77,7 @@ export default function Prayer() {
               className="prayer-input"
               id="name"
               type="text"
-              name="name"
+              name="user_name"
               placeholder="What's Your Name?"
               required
               value={name}
@@ -69,8 +88,9 @@ export default function Prayer() {
               className="prayer-input"
               id="email"
               type="email"
-              name="email"
+              name="user_email"
               placeholder="What's Your Email?"
+              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -83,7 +103,9 @@ export default function Prayer() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <button className="prayer-input" type="submit">Send</button>
+            <button className="prayer-input" type="submit">
+              Send
+            </button>
           </form>
         </div>
       </div>
