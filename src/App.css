@@ -58,6 +58,7 @@ label, input, textarea {
 
 .upper-child {
     flex: auto;
+    /* position: relative; */
 }
 
 .footer-child {

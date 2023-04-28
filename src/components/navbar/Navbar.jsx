@@ -55,7 +55,7 @@ export default function Navbar() {
             {isMinistryDropDownOpen && <Ministry />}
           </div>
           {navbarData.map((data) => (
-            <Link to={data.link}>
+            <Link key={data.name} to={data.link}>
               <span className="navbar-list" key={data.name}>
                 {data.name}
               </span>

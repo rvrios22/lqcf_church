@@ -29,8 +29,8 @@ export default function Home() {
       {/* <Map /> */}
       <h3 className="sub-header">What's Going On</h3>
       <div className="home-events-container">
-        {homeEvents.map((event) => (
-          <div className="event-square">
+        {homeEvents.map((event, idx) => (
+          <div key={idx} className="event-square">
             <Link to={event.link}>
               <img
                 src="/temp.jpg"

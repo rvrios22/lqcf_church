@@ -6,7 +6,7 @@ function Ministry() {
   return (
     <div className="drop-down-container ministry">
       {ministry.map((ministry) => (
-        <Link to={ministry.link}>
+        <Link key={ministry.name} to={ministry.link}>
           <div className="drop-down-item" key={ministry.name}>{ministry.name}</div>
         </Link>
       ))}
