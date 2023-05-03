@@ -5,8 +5,14 @@
     border-radius: 7px; */
 }
 
+.event-header {
+    font-family: 'Raleway';
+    text-align: left;
+    margin-bottom: .15em;
+}
+
 .event-spacer {
-    width: 60%;
+    width: 100%;
     height: 1px;
     background-color: black;
     border: none;
@@ -18,14 +24,15 @@
     display: none;
 }
 
-p.general-text.event-text {
-    margin: -.5em .25em .75em;
+.event-text {
+    font-family: 'Lato';
+    margin: -.5em auto .75em;
     text-align: left;
+    font-size: .9em;
 }
 
-p.general-text.event-text:last-of-type {
+.event-text:last-of-type {
     font-size: .75em;
     text-align: center;
     text-decoration: underline;
 }
-

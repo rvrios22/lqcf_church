@@ -33,7 +33,7 @@ export default function Home() {
           <div key={idx} className="event-square">
             <Link to={event.link}>
               <img
-                src="/temp.jpg"
+                src={`./${event.photo}.jpg`}
                 alt={event.alt}
                 className="event-image"
               />

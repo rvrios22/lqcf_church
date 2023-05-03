@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function IdentityYouth() {
   return (
-    <div>IdentityYouth</div>
+    <div className='general-container'>
+      <img src="./youthGroupHeader.jpg" alt="" className='general-image' />
+    </div>
   )
 }

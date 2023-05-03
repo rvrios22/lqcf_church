@@ -1,39 +1,27 @@
 export const homeEvents = [
     {
         name: "Men's Study",
-        photo: "mensStudy",
+        photo: "homeMensStudy",
         link: "mens-study",
         alt: "Men's study"
     },
     {
         name: "Prayer Chain",
-        photo: "prayerChain",
+        photo: "homePrayerChain",
         link: "prayer-chain",
         alt: "Prayer Chain"
     },
     {
         name: "Women's Study",
-        photo: "womensStudy",
+        photo: "homeWomensStudy",
         link: "womens-study",
         alt: "Women's study"
     },
     {
-        name: "Women's Study",
-        photo: "womensStudy",
-        link: "womens-study",
-        alt: "Women's study"
-    },
-    {
-        name: "Women's Study",
-        photo: "womensStudy",
-        link: "womens-study",
-        alt: "Women's study"
-    },
-    {
-        name: "Women's Study",
-        photo: "womensStudy",
-        link: "womens-study",
-        alt: "Women's study"
+        name: "Live Stream",
+        photo: "homeLiveStream",
+        link: null,
+        alt: "Watch our live Stream"
     },
 ]
 

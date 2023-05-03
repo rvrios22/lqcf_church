@@ -7,12 +7,12 @@ import "../css/events.css";
 export default function Events() {
   return (
     <div className="events-parent">
-      <h3 className="sub-header">Upcoming Events:</h3>
+      <h1 className="sub-header">Upcoming Events:</h1>
       {eventPage.map((event) => (
         <div className="event-container">
-          <h4 className="sub-header">{event.name}</h4>
-          <p className="general-text event-text">{event.description}</p>
-          <p className="general-text event-text">{event.date}</p>
+          <h3 className="event-header">{event.name}</h3>
+          <p className="event-text">{event.description}</p>
+          <p className="event-text">{event.date}</p>
           <hr className="event-spacer"/>
         </div>
       ))}
