@@ -5,7 +5,7 @@ export default function MensStudy() {
   return (
     <div className="general-container">
       <h1 className="header">Men's Study</h1>
-      <img className="general-image" src="./mensStudyHeader.jpg" alt="" />
+      <img className="general-image" src="./mensStudyHeader.jpg" alt="Man reading a bible" />
       <p className="general-text">
         Our Men's Ministry is lead by Pastor Curtis Claire. For the past year,
         we have been studying the attributes of God and using a book by the

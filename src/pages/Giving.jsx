@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../css/giving.css'
+import "../css/giving.css";
 
 export default function Giving() {
   return (
@@ -8,13 +8,15 @@ export default function Giving() {
       <h1 className="header">Tithes and Offerings</h1>
       <div className="general-container">
         <p className="general-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio neque
-          nisi eius animi maxime fuga minima a asperiores. Molestias nostrum
-          ducimus eum cumque sequi quae esse expedita minima animi nesciunt.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam
-          doloremque nostrum possimus molestias voluptatum earum ad! Dignissimos
-          ipsam aut voluptates porro, culpa, cumque ut delectus officiis maxime
-          ipsa sequi.
+          At La Quinta Christian Fellowship, we are called to glorify God in all
+          acts of worship, including tithes and offerings. Faithful giving is an
+          act of worship, and should be given regularly, in love, as well as
+          faithfully, with a heart of gratitude and thanksgiving.
+        </p>
+        <p className="general-text">2 Corinthians 6:6-15</p>
+        <p className="bible-text">
+          “Praise God from whom all blessings flow… Praise God, our portion here
+          below!”
         </p>
         <div>
           <h3 className="sub-header">Ways to Give:</h3>

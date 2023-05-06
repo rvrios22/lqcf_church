@@ -99,3 +99,18 @@ export const eventPage = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae sapiente! Repellendus, quisquam! Nemo molestiae fugit nihil voluptates, quia distinctio atque cum?'
     },
 ]
+
+export const youthPage = [
+    {
+        header: 'Purpose Statement',
+        text: 'Identity youth exists to train up generations of youth to know Christ, to know who they are in Christ, and to proclaim Christ to all.'
+    },
+    {
+        header: 'Vision Statement',
+        text: "To discover our true identity in Christ and God's will for our lives."
+    },
+    {
+        header: 'Ephesians 2:10',
+        bible: "For we are God's masterpiece. He has created us anew in Christ Jesus, so we can do the good things he planned for us long ago."
+    },
+]

@@ -2,10 +2,14 @@
     font-family: 'Lato';
     text-align: center;
     margin: -.5em .25em .75em;
+    overflow-y: auto;
+    height: 33vh;
 }
 
 .elder-image {
     border-radius: 7px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media (min-width: 800px) {

@@ -6,10 +6,10 @@ import "../css/elder.css";
 
 export default function Elders() {
   return (
-    <div>
+    <div className='general-container'>
       <h1 className='header'>Meet Our Pastors</h1>
       {elderPage.map((elder) => (
-        <div key={elder.name} className='general-container elder-container'>
+        <div key={elder.name} className='elder-container'>
           <div className='elder-image-container'>
             <img 
              className='elder-image'
