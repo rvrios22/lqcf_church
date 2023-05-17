@@ -28,14 +28,27 @@ export const homeEvents = [
 export const elderPage = [
     {
         name: "Pastor Mark Collins",
-        bio: `lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci
-        odio asperiores veniam excepturi, sed inventore nisi vitae repellat
-        laboriosam aperiam facilis dolores perspiciatis, aliquid ab, explicabo
-        eaque atque esse? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Repellendus delectus rerum eligendi suscipit iste quos ut numquam
-        voluptas quo, nemo repudiandae officia natus, blanditiis autem
-        reprehenderit quibusdam eum pariatur nesciunt.`,
-        photo: ""
+        bio: `Pastor Mark A. Collins was saved by the grace of God in June of 1977 at the
+        age of nineteen at a revival service at 1 st Baptist Church of Coachella. (Eph.
+        1:3-6)
+        Called into the ministry by the Holy Spirit at the same church, he served as a
+        deacon for several years. He was then licensed and ordained to preach the
+        Gospel of Jesus Christ. (Isa. 6:8) In Dec. of 1981, he started pastoring LQ
+        Christian Fellowship Church, with his wife, Susan, serving alongside him.
+        The couple founded LQ Christian Fellowship School in 1984, providing
+        Christian education for children K-8 th . In June of 2006, Pastor Mark
+        received his Doctorate in Theology from Solomon Theological Seminary
+        and Bible College.
+        Pastor Mark and Susan have been married since April of 1976. They are
+        blessed with five children (two of whom are adopted) and ten beautiful
+        grandchildren.
+        He has a passion for cycling, participates annually in the Tour of Palm
+        Springs Century Ride, by the good grace of God.
+        His life verses are Col. 3:23-24, “Whatever you do, do your work heartily, as
+        for the Lord rather than for men, knowing that from the Lord you will
+        receive the reward of the inheritance. It is the Lord Christ whom you serve.”`,
+        portrait: "cooksPortrait",
+        landscape: "cooksLandscape"
     },
     {
         name: "Pastor Mark Cook",
@@ -45,7 +58,8 @@ export const elderPage = [
         Grand Canyon University. He serves with the youth, teaches adult bible study, heads the prayer
         ministry, and heads the outreach ministry. He is married and has a grown daughter living in
         Washington.`,
-        photo: ""
+        portrait: "cooksPortrait",
+        landscape: "cooksLandscape"
     },
     {
         name: "Pastor Curtis Claire",
@@ -68,7 +82,8 @@ export const elderPage = [
         And how are they to believe in him of whom they have never heard? And how are they to hear without
         someone preaching? 15 And how are they to preach unless they are sent? As it is written, “How
         beautiful are the feet of those who preach the good news!”`,
-        photo: ""
+        portrait: "cooksPortrait",
+        landscape: "cooksLandscape"
     },
 ]
 

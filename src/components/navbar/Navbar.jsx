@@ -27,7 +27,7 @@ export default function Navbar() {
 
   useOnHoverOutside(ministryRef, closeHoverMinistry);
   useOnHoverOutside(whoWeAreRef, closeHoverWhoWeAre);
-  //last edit: removed the Ministry component from the container
+
   return (
     <div className="navbar-container">
       <MobileNavbar />

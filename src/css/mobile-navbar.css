@@ -5,10 +5,10 @@
 }
 
 .mobile-navbar-menu-icon {
-    display: inline;
+    display: inline-block;
     position: relative;
     left: 90%;
-    top: 5px;
+    position: sticky;
 }
 
 .mobile-navbar-links-container {
@@ -26,12 +26,15 @@
 }
 
 .mobile-navbar-open-menu {
-    position: absolute;
+    /* position: relative; */
     background-color: rgb(184, 184, 184);
     width: 100%;
     text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .closed-mobile-navbar-general {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
     display: none;
 }
