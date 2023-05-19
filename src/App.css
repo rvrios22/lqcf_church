@@ -71,3 +71,24 @@ textarea {
 .footer-child {
     bottom: 2vh;
 }
+
+.working {
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: rgba(54, 187, 227, 0.9);
+}
+
+.close-icon {
+    display: flex;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

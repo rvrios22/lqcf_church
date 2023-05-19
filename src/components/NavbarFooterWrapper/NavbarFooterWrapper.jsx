@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/footer";
 import MobileNavbar from "../mobileNavbar/MobileNavbar";
+import Working from "../maintinance/Working";
 
 export default function NavbarFooterWrapper() {
   return (
@@ -15,6 +16,9 @@ export default function NavbarFooterWrapper() {
         </div>
         <div className="footer-child">
           <Footer />
+        </div>
+        <div>
+          <Working />
         </div>
       </div>
     </div>

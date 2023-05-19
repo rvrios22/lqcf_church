@@ -8,7 +8,6 @@ import './App.css';
 
 import ErrorPage from './pages/ErrorPage';
 
-import Root from './pages/Root';
 import Home from './pages/Home';
 import Giving from './pages/Giving';
 import Events from './pages/Events';

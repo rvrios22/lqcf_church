@@ -58,7 +58,7 @@ export default function Prayer() {
           those who are seeking prayer.
         </p>
         <p className="bible-text">
-          "Is any sick among you? let him call for the elders of the church; and
+          "Is any sick among you? Let him call for the elders of the church; and
           let them pray over him, anointing him with oil in the name of the
           Lord: And the prayer of faith shall save the sick, and the Lord shall
           raise him up; and if he have committed sins, they shall be forgiven

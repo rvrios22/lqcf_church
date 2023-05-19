@@ -17,11 +17,11 @@ export default function Footer() {
         </div>
         <div className="footer-gird-item">
           <h3 className="footer-header">Physical Address:</h3>
-          <p className="footer-general-text">50800 Calle Paloma,</p>
+          <p className="footer-general-text">50800 Calle Paloma</p>
           <p className="footer-general-text">La Quinta CA 92253</p>
           <h3 className="footer-header">Mailing Address:</h3>
-          <p className="footer-general-text">50800 Calle Paloma,</p>
-          <p className="footer-general-text">La Quinta CA 92253</p>
+          <p className="footer-general-text">P.O. Box 676</p>
+          <p className="footer-general-text">La Quinta CA 92247</p>
           <p className="footer-general-text"><a href="tel:+">760-555-5555</a></p>
         </div>
         <Map />

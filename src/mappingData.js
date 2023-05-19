@@ -3,25 +3,29 @@ export const homeEvents = [
         name: "Men's Study",
         photo: "homeMensStudy",
         link: "mens-study",
-        alt: "Men's study"
+        alt: "Men's study",
+        target: "_self"
     },
     {
         name: "Prayer Chain",
         photo: "homePrayerChain",
         link: "prayer-chain",
-        alt: "Prayer Chain"
+        alt: "Prayer Chain",
+        target: "_self"
     },
     {
         name: "Women's Study",
         photo: "homeWomensStudy",
         link: "womens-study",
-        alt: "Women's study"
+        alt: "Women's study",
+        target: "_self"
     },
     {
         name: "Live Stream",
         photo: "homeLiveStream",
-        link: null,
-        alt: "Watch our live Stream"
+        link: "https://www.facebook.com/profile.php?id=100075875377675",
+        alt: "Watch our live Stream",
+        target: "_blank"
     },
 ]
 
@@ -47,8 +51,8 @@ export const elderPage = [
         His life verses are Col. 3:23-24, “Whatever you do, do your work heartily, as
         for the Lord rather than for men, knowing that from the Lord you will
         receive the reward of the inheritance. It is the Lord Christ whom you serve.”`,
-        portrait: "cooksPortrait",
-        landscape: "cooksLandscape"
+        portrait: "collinsPortrait",
+        landscape: "collinsLandscape"
     },
     {
         name: "Pastor Mark Cook",
@@ -82,8 +86,8 @@ export const elderPage = [
         And how are they to believe in him of whom they have never heard? And how are they to hear without
         someone preaching? 15 And how are they to preach unless they are sent? As it is written, “How
         beautiful are the feet of those who preach the good news!”`,
-        portrait: "cooksPortrait",
-        landscape: "cooksLandscape"
+        portrait: "clairePortrait",
+        landscape: "claireLandscape"
     },
 ]
 
