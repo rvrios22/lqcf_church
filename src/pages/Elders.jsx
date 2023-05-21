@@ -21,7 +21,6 @@ export default function Elders() {
 
   //useEffect to track height of the images
   useEffect(() => {
-    setImageHeight(getHeightOfImages);
     const updateHeight = () => {
       setImageHeight(getHeightOfImages());
     };
@@ -65,7 +64,11 @@ export default function Elders() {
           <div className="elder-bio">
             <p
               className="elder-text"
-              style={screenWidth.width >= 800 ? { height: imageHeight } : {}}
+              style={
+                screenWidth.width >= 800
+                  ? { height: imageHeight }
+                  : {  }
+              }
             >
               {elder.bio}
             </p>
