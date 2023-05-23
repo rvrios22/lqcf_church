@@ -93,24 +93,24 @@ export const elderPage = [
 
 export const eventPage = [
     {
-        name: "Men's Study",
-        date: 'April 13, 2023',
-        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
-    },
-    {
-        name: "Men's Study",
-        date: 'April 27, 2023',
-        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
-    },
-    {
         name: "Women's Study",
         date: 'April 12, 2023',
         description: "Join us at 6:30pm at sister Jennifer Claire's home for our women's study. We are continuing our series of terms."
     },
     {
+        name: "Men's Study",
+        date: 'April 13, 2023',
+        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
+    },
+    {
         name: "Women's Study",
         date: 'April 26, 2023',
         description: "Join us at 6:30pm at sister Jennifer Claire's home for our women's study. We are continuing our series of terms."
+    },
+    {
+        name: "Men's Study",
+        date: 'April 27, 2023',
+        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
     },
     {
         name: 'Guest Speaker: Caleb Collins',
