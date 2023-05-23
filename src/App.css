@@ -75,12 +75,13 @@ textarea {
 .working {
     position: fixed;
     bottom: 0;
+    padding: 1em;
     background-color: gray;
+    text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
     background-color: rgba(54, 187, 227, 0.9);
 }
 

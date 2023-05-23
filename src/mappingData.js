@@ -93,29 +93,29 @@ export const elderPage = [
 
 export const eventPage = [
     {
-        name: 'Men Study',
-        date: 'April 25, 2023',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae sapiente! Repellendus, quisquam! Nemo molestiae fugit nihil voluptates, quia distinctio atque cum?'
+        name: "Men's Study",
+        date: 'April 13, 2023',
+        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
     },
     {
-        name: 'Men Study',
-        date: 'April 25, 2023',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae'
+        name: "Men's Study",
+        date: 'April 27, 2023',
+        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
     },
     {
-        name: 'Men Study',
-        date: 'April 25, 2023',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis'
+        name: "Women's Study",
+        date: 'April 12, 2023',
+        description: "Join us at 6:30pm at sister Jennifer Claire's home for our women's study. We are continuing our series of terms."
     },
     {
-        name: 'Men Study',
-        date: 'April 25, 2023',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis'
+        name: "Women's Study",
+        date: 'April 26, 2023',
+        description: "Join us at 6:30pm at sister Jennifer Claire's home for our women's study. We are continuing our series of terms."
     },
     {
-        name: 'Men Study',
-        date: 'April 25, 2023',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in corrupti veritatis dolorem doloremque aliquam ad harum, recusandae sapiente! Repellendus, quisquam! Nemo molestiae fugit nihil voluptates, quia distinctio atque cum?'
+        name: 'Guest Speaker: Caleb Collins',
+        date: 'June 4, 2023',
+        description: "Join us this Sunday for our special guest speaker, Caleb Collins."
     },
 ]
 
