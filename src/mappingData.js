@@ -67,10 +67,9 @@ export const elderPage = [
     },
     {
         name: "Pastor Curtis Claire",
-        bio: `Pastor Curtis Claire was chosen and predestined before the foundations of the worlds (Ephesians 1:3-6)
-        and was called and justified on November 1 1999 at Calvary Chapel Costa Mesa. (Romans 8:29-30)
+        bio: `Pastor Claire was chosen in Christ before the foundation of the world according to the will of God the Father to the praise of His glorious grace. (Ephesians 1:3-6) And was called and justified on November 1, 1999 at Calvary Chapel Costa Mesa. (Romans 8:29-30)
         A decade after his calling, God called him into evangelism as well as pastoring, eventually leading him to
-        be the founder and director of ‘Jesus is the Cure’ ministries. (Matthew 25:34-40)
+        be the founder and director of Jesus is the Cure ministries. (Matthew 25:34-40)
         He has a passion for biblical studies, Protestant church history and contending for the faith that was
         once for all delivered to the saints. (Jude 1:3)
         He has been attending La Quinta Christian Fellowship for 8 years.
@@ -93,29 +92,34 @@ export const elderPage = [
 
 export const eventPage = [
     {
+        name: "Women's Group Fishfest Concert",
+        date: 'June 10, 2023',
+        description: "Our women's group will be attending the Fishfest Concert in Irvine. Please contact Jennifer at (760) 887-6523 for more details."
+    },
+    {
+        name: "L.Q.C.F School 29th Awards & Grad Ceremony",
+        date: 'June 10, 2023',
+        description: "We will be having our school's yearly awards and graduation night at 4pm! We will be at Journey Baptist Church located at 43400 Warner Trail, Palm Desert, CA 92211. Our theme this year is Discipleship in Education. A reception is to follow after the ceromony. All are welcome!"
+    },
+    {
+        name: "Father's Day Service",
+        date: 'June 18, 2023',
+        description: "Join us this special Sunday as we honor our fathers in celebration of Father's Day."
+    },
+    {
+        name: "Identity Youth Date Change",
+        date: 'June 22, 2023',
+        description: "Identity Youth will be meeting at Trinity Baptist Church on Thursday June 22."
+    },
+    {
         name: "Women's Study",
-        date: 'April 12, 2023',
-        description: "Join us at 6:30pm at sister Jennifer Claire's home for our women's study. We are continuing our series of terms."
+        date: 'June 23, 2023',
+        description: "Join us as sister Jennifer Claire's home at 6:30 PM for our women's study. We are continuing our series through terms and we will be studying ."
     },
     {
         name: "Men's Study",
-        date: 'April 13, 2023',
-        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
-    },
-    {
-        name: "Women's Study",
-        date: 'April 26, 2023',
-        description: "Join us at 6:30pm at sister Jennifer Claire's home for our women's study. We are continuing our series of terms."
-    },
-    {
-        name: "Men's Study",
-        date: 'April 27, 2023',
-        description: "Join us at the church at 7am for our men's bible study. We will be continuing our study through the attributes of God. We are currently studying the Asiety of God."
-    },
-    {
-        name: 'Guest Speaker: Caleb Collins',
-        date: 'June 4, 2023',
-        description: "Join us this Sunday for our special guest speaker, Caleb Collins."
+        date: 'June 24, 2023',
+        description: "Join us in the sacturary at 7:30 AM for our men's study. We are continuing our series through the Attributes of God and we will be studying the Sovreignty of God."
     },
 ]
 

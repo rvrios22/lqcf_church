@@ -8,9 +8,7 @@ export default function MensStudy() {
       <img className="general-image" src="./mensStudyHeader.jpg" alt="Man reading a bible" />
       <p className="general-text">
         Our Men's Ministry is lead by Pastor Curtis Claire. For the past year,
-        we have been studying the attributes of God and using a book by the
-        Puritan author Thomas Watson as a guide through our study. The attrubute
-        we are currently studying is the Asiety of God. We meet at 7:30AM in
+        our men have been studying the attributes of God using an outline of the shorter Westminster Catechism "A Body of Divinity" by Thomas Watson. We meet at 7:30AM in
         the sanctuary of the church every 2nd and 4th Saturday of each month.
         Please see our{" "}
         <Link to="/events">
