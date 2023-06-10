@@ -19,7 +19,7 @@ import PrayerChain from "./pages/PrayerChain";
 import Missionary from "./pages/Missionary";
 import Elders from "./pages/Elders";
 import WhatWeBelieve from "./pages/WhatWeBelieve";
-
+import Login from "./pages/login";
 import NavbarFooterWrapper from "./components/NavbarFooterWrapper/NavbarFooterWrapper";
 
 const router = createHashRouter([
@@ -75,6 +75,10 @@ const router = createHashRouter([
       {
         path: "/what-we-believe",
         element: <WhatWeBelieve />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
