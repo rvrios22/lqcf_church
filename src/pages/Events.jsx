@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { eventPage } from "../mappingData";
 
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { db } from "../firebase-config";
 
 import "../css/events.css";
@@ -10,10 +10,13 @@ import "../css/events.css";
 export default function Events() {
   const [eventsData, setEventsData] = useState([]);
 
+  const eventsRef = collection(db, "events");
+  const eventQuery = query(eventsRef, orderBy("eventDate", "asc"))
+
   useEffect(() => {
     const getEvents = async () => {
       try {
-        const eventsData = await getDocs(collection(db, "events"));
+        const eventsData = await getDocs(eventQuery);
         const filteredEventsData = eventsData.docs.map((doc) => ({
           ...doc.data(),
           id: doc.id,
@@ -27,7 +30,6 @@ export default function Events() {
     getEvents();
   }, []);
 
-  console.log(eventsData)
   return (
     <div className="events-parent">
       <h1 className="sub-header">Upcoming Events:</h1>
