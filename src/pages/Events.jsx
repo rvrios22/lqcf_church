@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
-import { db } from "../firebase-config";
+import { auth, db } from "../firebase-config";
 
 import "../css/events.css";
 import Event from "../components/event/Event";
@@ -10,6 +10,9 @@ import AddEvent from "../components/addEvent/AddEvent";
 export default function Events() {
   //state to get event data from Firebase
   const [eventsData, setEventsData] = useState([]);
+
+  //state to verify if user is signed in
+  const [user, setUser] = useState(false);
 
   //states to handle collection and query from Firebase
   const eventsRef = collection(db, "events");
@@ -32,6 +35,10 @@ export default function Events() {
 
   //fetches data on mount
   useEffect(() => {
+    if (auth.currentUser != null) {
+      setUser(true);
+    }
+
     getEvents();
   }, []);
 
@@ -46,9 +53,10 @@ export default function Events() {
           date={event.eventDate}
           id={event.id}
           getEvents={getEvents}
+          user={user}
         />
       ))}
-      <AddEvent getEvents={getEvents} eventsRef={eventsRef} />
+      {user && <AddEvent getEvents={getEvents} eventsRef={eventsRef} />}
     </div>
   );
 }

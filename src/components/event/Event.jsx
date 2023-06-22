@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { db } from "../../firebase-config";
 import { deleteDoc, doc, updateDoc } from "firebase/firestore";
 
-function Event({ title, desc, date, id, getEvents }) {
+function Event({ title, desc, date, id, getEvents, user }) {
   const [isEditActive, setIsEditActive] = useState(false);
   const [editedTitle, setEditedTitle] = useState(title);
   const [editedDesc, setEditedDesc] = useState(desc);
@@ -39,8 +39,8 @@ function Event({ title, desc, date, id, getEvents }) {
           <h3 className="event-header">{title}</h3>
           <p className="event-text">{desc}</p>
           <p className="event-text">{date}</p>
-          <button onClick={() => handleDeleteEvent(id)}>Delete</button>
-          <button onClick={() => setIsEditActive(!isEditActive)}>Edit</button>
+          {user && <button onClick={() => handleDeleteEvent(id)}>Delete</button>}
+          {user && <button onClick={() => setIsEditActive(!isEditActive)}>Edit</button>}
         </>
       ) : (
         <>
