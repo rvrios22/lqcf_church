@@ -1,8 +1,6 @@
 .event-container {
     width: 80%;
     margin: 1em auto;
-    /* border: 1px groove black;
-    border-radius: 7px; */
 }
 
 .event-header {
@@ -35,4 +33,18 @@
     font-size: .75em;
     text-align: center;
     text-decoration: underline;
+}
+
+.add-event-container {
+    text-align: center;
+}
+
+.add-event-label, .add-event-input {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-event-button {
+    margin-top: .5em;
 }

@@ -1,32 +1,23 @@
 import React, { useEffect, useState } from "react";
 
-import {
-  addDoc,
-  collection,
-  getDocs,
-  orderBy,
-  query,
-  deleteDoc,
-  doc,
-  updateDoc,
-} from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { db } from "../firebase-config";
 
 import "../css/events.css";
-import EventsList from "../components/renderedEvents/EventsList";
-import UpdateList from "../components/renderedEvents/UpdateList";
+import Event from "../components/event/Event";
+import AddEvent from "../components/addEvent/AddEvent";
 
 export default function Events() {
+  //state to get event data from Firebase
   const [eventsData, setEventsData] = useState([]);
-  const [eventTitle, setEventTitle] = useState("");
-  const [eventDate, setEventDate] = useState("");
-  const [eventDesc, setEventDesc] = useState("");
-  const [isUpdateField, setIsUpdateField] = useState(false);
 
+  //states to handle collection and query from Firebase
   const eventsRef = collection(db, "events");
   const eventQuery = query(eventsRef, orderBy("eventDate", "asc"));
 
+  //function to get event data from firebase
   const getEvents = async () => {
+    //try block fetches data, filters result to have relevant data, then sets state
     try {
       const eventsData = await getDocs(eventQuery);
       const filteredEventsData = eventsData.docs.map((doc) => ({
@@ -39,88 +30,25 @@ export default function Events() {
     }
   };
 
+  //fetches data on mount
   useEffect(() => {
     getEvents();
   }, []);
 
-  const handleAddEvent = async () => {
-    try {
-      await addDoc(eventsRef, {
-        eventTitle: eventTitle,
-        eventDesc: eventDesc,
-        eventDate: eventDate,
-      });
-      setEventTitle("");
-      setEventDate("");
-      setEventDesc("");
-      getEvents();
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const handleDeleteEvent = async (id) => {
-    const eventDoc = doc(db, "events", id);
-
-    try {
-      await deleteDoc(eventDoc);
-      getEvents();
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const handleUpdateEvent = async (id) => {
-    const eventDoc = doc(db, "events", id);
-
-    try {
-      await updateDoc(eventDoc, {});
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const handleUpdateField = () => {
-    setIsUpdateField(!isUpdateField);
-  };
-
-  console.log(isUpdateField);
   return (
-    <div className="events-parent">
+    <div className="events-parent event-container">
       <h1 className="sub-header">Upcoming Events:</h1>
-      {!isUpdateField ? (
-        <EventsList
-          data={eventsData}
-          deleteDoc={handleDeleteEvent}
-          isUpdateField={handleUpdateField}
+      {eventsData.map((event) => (
+        <Event
+          key={event.id}
+          title={event.eventTitle}
+          desc={event.eventDesc}
+          date={event.eventDate}
+          id={event.id}
+          getEvents={getEvents}
         />
-      ) : (
-        <UpdateList data={eventsData} isUpdateField={handleUpdateField} />
-      )}
-
-      <div className="add-event-container">
-        <label htmlFor="add-event-title">Title: </label>
-        <input
-          type="text"
-          id="add-event-title"
-          onChange={(e) => setEventTitle(e.target.value)}
-        />
-        <label htmlFor="add-event-date">Date</label>
-        <input
-          type="text"
-          id="add-event-date"
-          onChange={(e) => setEventDate(e.target.value)}
-        />
-        <label htmlFor="add-event-desc">Description</label>
-        <textarea
-          name="event-desc"
-          id="add-event-desc"
-          cols="30"
-          rows="10"
-          onChange={(e) => setEventDesc(e.target.value)}
-        ></textarea>
-        <button onClick={handleAddEvent}>Add Event</button>
-      </div>
+      ))}
+      <AddEvent getEvents={getEvents} eventsRef={eventsRef} />
     </div>
   );
 }
