@@ -85,6 +85,15 @@ textarea {
     background-color: rgba(54, 187, 227, 0.9);
 }
 
+.modal-click {
+    text-decoration: underline;
+}
+
+.modal-click:hover {
+    cursor: pointer;
+    color: blue;
+}
+
 .close-icon {
     display: flex;
     cursor: pointer;

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { addDoc } from "firebase/firestore";
-import { db } from "../../firebase-config";
 
 function AddEvent( {eventsRef, getEvents}) {
   //states to handle adding a new event
@@ -31,6 +30,7 @@ function AddEvent( {eventsRef, getEvents}) {
         type="text"
         id="add-event-title"
         onChange={(e) => setEventTitle(e.target.value)}
+        value={eventTitle}
       />
       <label className="add-event-label" htmlFor="add-event-date">Date</label>
       <input
@@ -38,6 +38,7 @@ function AddEvent( {eventsRef, getEvents}) {
         type="text"
         id="add-event-date"
         onChange={(e) => setEventDate(e.target.value)}
+        value={eventDate}
       />
       <label className="add-event-label" htmlFor="add-event-desc">Description</label>
       <textarea
@@ -47,6 +48,7 @@ function AddEvent( {eventsRef, getEvents}) {
         cols="30"
         rows="10"
         onChange={(e) => setEventDesc(e.target.value)}
+        value={eventDesc}
       ></textarea>
       <button className="add-event-button" onClick={handleAddEvent}>Add Event</button>
     </div>

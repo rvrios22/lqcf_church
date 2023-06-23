@@ -14,7 +14,7 @@ export default function Events() {
   //state to verify if user is signed in
   const [user, setUser] = useState(false);
 
-  //states to handle collection and query from Firebase
+  //varables to handle collection and query from Firebase
   const eventsRef = collection(db, "events");
   const eventQuery = query(eventsRef, orderBy("eventDate", "asc"));
 
