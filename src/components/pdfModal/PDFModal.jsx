@@ -1,7 +1,7 @@
 import React from "react";
 import "./pdfModal.css";
 import { Close } from "@mui/icons-material";
-function PDFModal({ data, setModal, modal }) {
+function PDFModal({ data, setModal, modal, modalRef }) {
   return (
     <div className="modal-container">
       <div onClick={() => setModal(!modal)} className="close-icon">
