@@ -22,7 +22,7 @@ export default function Footer() {
           <h3 className="footer-header">Mailing Address:</h3>
           <p className="footer-general-text">P.O. Box 676</p>
           <p className="footer-general-text">La Quinta CA 92247</p>
-          <p className="footer-general-text"><a href="tel:+">760-564-9194</a></p>
+          <p className="footer-general-text"><a href="tel:+">760-564-9195</a></p>
         </div>
         <Map />
       </div>

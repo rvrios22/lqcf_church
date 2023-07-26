@@ -3,7 +3,7 @@ import React from "react";
 export default function PrayerChain() {
   return (
     <div className="general-container">
-      <h1 className="header">Prayer Minstry</h1>
+      <h1 className="header">Prayer Ministry</h1>
       <img src="./prayerChainHeader.jpg" alt="Praying hands" className="general-image" />
       <p className="general-text">
         Our Prayer Chain ministry is led by Pastor Mark Cook. We meet the first

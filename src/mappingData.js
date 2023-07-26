@@ -117,11 +117,11 @@ export const statementOfFaith = [
     },
     {
         title: 'The Human Condition',
-        statement: "We believe that God createed males and femailes in His image but they sinned when tempted by Satan. In union with Adam, human beings are sinners by nature and by choice, alienated from God, dead in their trespasses and sin, children of wrath and under the wrath of God. Only through God's saving work in Jesus Christ can a person be rescued, reconciled, and renewed. John 3:36, Romans 3:10-11, Ephesians 2:1-10, Romans 3:23, Romans 5:12, Titus 3:3."
+        statement: "We believe that God created males and females in His image but they sinned when tempted by Satan. In union with Adam, human beings are sinners by nature and by choice, alienated from God, dead in their trespasses and sin, children of wrath and under the wrath of God. Only through God's saving work in Jesus Christ can a person be rescued, reconciled, and renewed. John 3:36, Romans 3:10-11, Ephesians 2:1-10, Romans 3:23, Romans 5:12, Titus 3:3."
     },
     {
         title: 'Jesus Christ',
-        statement: "We believe that Jesus Christ is God incarnate, fully God and fully man, One person in two natures. Jesus, Israel's promised Messiah, was conceived through the Holy Spirit and born of the virgin Mary. He lived a sinless life, was crucified uner Pontius Pilate, arose from the dead, ascended into heaven, and sits at the right hand of God the Father as our High Priest and Advocate. John 1:1-2, John 1:14, Philippians 2:5-8, Hebrews 1:1-4, 2 Corinthains 5:19-21, Luke 1:26-31, Hebrews 8:1-2, 1 Timothy 2:5, Galatians 4:4-5, Isaiah 7:14, Isaiah 9:6."
+        statement: "We believe that Jesus Christ is God incarnate, fully God and fully man, One person in two natures. Jesus, Israel's promised Messiah, was conceived through the Holy Spirit and born of the virgin Mary. He lived a sinless life, was crucified under Pontius Pilate, arose from the dead, ascended into heaven, and sits at the right hand of God the Father as our High Priest and Advocate. John 1:1-2, John 1:14, Philippians 2:5-8, Hebrews 1:1-4, 2 Corinthains 5:19-21, Luke 1:26-31, Hebrews 8:1-2, 1 Timothy 2:5, Galatians 4:4-5, Isaiah 7:14, Isaiah 9:6."
     },
     {
         title: 'The Work of Christ',
@@ -133,7 +133,7 @@ export const statementOfFaith = [
     },
     {
         title: 'The Holy Spirit',
-        statement: "We believe that the Holy Spirit, in all that He does, glorifies the Lord Jesus Christ. He convicts the world regarding sin. He regenerates sinner, those who are otherwise dead in their sin by making them be born again and ailve in Christ. In Him believers are baptized into union with Christ and adpoted as heirs in the family of God. He also indwells, illuminates, guides, equips, and empowers His church for Christ-like living and service. Ephesians 2:1-10, John 16:14, John 16:8, John 3:3, Titus 3:5, 1 Peter 1:3, Galatians 5:24-25, Galatians 5:16."
+        statement: "We believe that the Holy Spirit, in all that He does, glorifies the Lord Jesus Christ. He convicts the world regarding sin. He regenerates sinners, those who are otherwise dead in their sin by making them be born again and ailve in Christ. In Him believers are baptized into union with Christ and adpoted as heirs in the family of God. He also indwells, illuminates, guides, equips, and empowers His church for Christ-like living and service. Ephesians 2:1-10, John 16:14, John 16:8, John 3:3, Titus 3:5, 1 Peter 1:3, Galatians 5:24-25, Galatians 5:16."
     },
     {
         title: 'The Church',
@@ -145,7 +145,7 @@ export const statementOfFaith = [
     },
     {
         title: 'Christian Living',
-        statement: "We believe that God's justifying grance must not be seperated from His sanctifying power and purpose. God commands us to love Him supremely and others sacrificially and to live out our faith with care for one another, compassion toward the poor, and justice for the oppressed. With God's word, the Spirit's power, and fervent prayer in Christ's name, we are to combat the spiritual forces of evil. In obedience to Christ's commision, we are to make disciples among all people, always bearing witness to the gospel in word and deed. Luke 10:27, Matthew 25:39-40, Matthew 29:19-20, Ephesians 6:12, 1 Thessalonais 1:4-5, Philippians 2:12, Ephesians 4:32, James 1:22."
+        statement: "We believe that God's justifying grance must not be seperated from His sanctifying power and purpose. God commands us to love Him supremely and others sacrificially and to live out our faith with care for one another, compassion toward the poor, and justice for the oppressed. With God's word, the Spirit's power, and fervent prayer in Christ's name, we are to combat the spiritual forces of evil. In obedience to Christ's commission, we are to make disciples among all people, always bearing witness to the gospel in word and deed. Luke 10:27, Matthew 25:39-40, Matthew 29:19-20, Ephesians 6:12, 1 Thessalonais 1:4-5, Philippians 2:12, Ephesians 4:32, James 1:22."
     },
     {
         title: "Christ's Return",
