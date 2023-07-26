@@ -21,11 +21,11 @@ export default function WomensStudy() {
         in each of these studies, while building confidence and familiarity in
         the Scriptures, as well as, empowering one another in prayer, and
         creating a strong sisterhood in Christ. Each aspect of the ministry
-        helps to equip and build confidence, in sharing the Gospel and prayer
+        helps to equip and build confidence in sharing the Gospel and prayer
         with those we encounter.
       </p>
       <p className="general-text">
-        Bible studies are hosted in a casual environment at Jennifers home, on
+        Bible studies are hosted in a casual environment at Jennife's home, on
         the 2nd and 4th Friday of each month (any variations will be posted in
         the{" "}
         <Link to="/events">

@@ -1,14 +1,18 @@
 import React from "react";
+import '../css/what-we-believe.css';
+import { statementOfFaith } from "../mappingData";
 
 export default function WhatWeBelieve() {
   return (
     <div className="general-container">
       <h1 className="header">What We Believe</h1>
-      <p className="general-text">
-        Our eldership is currently working on listing out our statements of
-        faith and vision statements for our church body. Please come back later
-        to view what we believe.
-      </p>
+      {statementOfFaith.map((statement) => (
+        <div className="statement-container">
+          <h2 className="sub-header">{statement.title}</h2>
+          <p className="general-text">{statement.statement}</p>
+          <hr className="statement-spacer"/>
+        </div>
+      ))}
     </div>
   );
 }

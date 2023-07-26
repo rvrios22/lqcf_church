@@ -1,0 +1,15 @@
+.statement-spacer {
+    width: 10%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    margin-top: 1em;
+}
+
+.statement-container:last-of-type hr {
+    display: none;
+}
+
+.statement-container:last-of-type {
+    margin-bottom: 2em;
+}

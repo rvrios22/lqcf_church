@@ -69,7 +69,7 @@ const router = createHashRouter([
         element: <Missionary />,
       },
       {
-        path: "/elders",
+        path: "/pastors",
         element: <Elders />,
       },
       {

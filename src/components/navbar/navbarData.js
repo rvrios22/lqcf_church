@@ -19,8 +19,8 @@ export const navbarData = [
 
 export const whoWeAre = [
     {
-        name: 'Elders',
-        link: 'elders'
+        name: 'Pastors',
+        link: 'pastors'
     },
     {
         name: 'What We Believe',

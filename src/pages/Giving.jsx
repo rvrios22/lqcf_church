@@ -28,7 +28,6 @@ export default function Giving() {
           <p className="general-text">
             Mail your offering to: P.O. Box 676 La Quinta, CA 92247
           </p>
-          <p className="general-text">You can Zelle us at:</p>
         </div>
       </div>
     </div>

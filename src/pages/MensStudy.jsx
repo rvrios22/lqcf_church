@@ -60,7 +60,7 @@ export default function MensStudy() {
         Our Men's Ministry is lead by Pastor Curtis Claire. For the past year,
         our men have been studying the attributes of God using an outline of the
         shorter Westminster Catechism "A Body of Divinity" by Thomas Watson. We
-        meet at 7:30AM in the sanctuary of the church every 2nd and 4th Saturday
+        meet at 7:30 AM in the sanctuary of the church every 2nd and 4th Saturday
         of each month. Please see our{" "}
         <Link to="/events">
           <span className="general-link">events</span>

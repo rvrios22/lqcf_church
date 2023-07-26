@@ -15,7 +15,7 @@ export default function map() {
   return (
     <div>
       <div className="footer-grid-ite">
-          {!isLoaded ? (
+        {/* {!isLoaded ? (
             <h3 className="sub-header">Loading...</h3>
           ) : (
             <GoogleMap
@@ -25,7 +25,12 @@ export default function map() {
             >
               <MarkerF position={center} />
             </GoogleMap>
-          )}
+          )} */}
+        <img
+          className="church-map"
+          src="./churchMap.jpg"
+          alt="a map where the church is located"
+        />
       </div>
     </div>
   );
