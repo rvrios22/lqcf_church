@@ -1,8 +1,33 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import PDFModal from "../components/pdfModal/PDFModal";
+import { db } from "../firebase-config";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 export default function WomensStudy() {
+  const [isModalActive, setIsModalActive] = useState(false);
+  const [pdfData, setPDFData] = useState([]);
+
+  const pdfRef = collection(db, "women-terms-pdf");
+  const pdfQuery = query(pdfRef, orderBy("title", "asc"));
+
+  const getPDF = async () => {
+    try {
+      const pdfData = await getDocs(pdfQuery);
+      const filteredPDFData = pdfData.docs.map((pdf) => ({
+        ...pdf.data(),
+        id: pdf.id,
+      }));
+      setPDFData(filteredPDFData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getPDF();
+  }, []);
+  
   return (
     <div className="general-container">
       <h1 className="header">Women's Ministry</h1>
@@ -46,8 +71,16 @@ export default function WomensStudy() {
         the Attributes of God. Each study is unique and created to be a
         stand-alone study, but pairs beautifully with the previous and upcoming
         studies. This allows the opportunity for ladies to join in when their
-        schedule permits.
+        schedule permits. To see a list of all of the outlines in this series
+        click{" "}
+        <span
+          className="modal-click"
+          onClick={() => setIsModalActive(!isModalActive)}
+        >
+          here
+        </span>
       </p>
+
       <p className="general-text">
         Jennifer has a passion for learning and teaching Scripture, and a heart
         for encouraging and leading the women in this ministry. Please feel free
@@ -55,6 +88,15 @@ export default function WomensStudy() {
         jenniferclaire77@gmail.com with any questions about this ministry.{" "}
       </p>
       <p className="bible-text">~Soli Deo Gloria</p>
+      <div
+        className={!isModalActive ? "deactive-modal" : "active-modal"}
+      >
+        <PDFModal
+          data={pdfData}
+          setModal={setIsModalActive}
+          modal={isModalActive}
+        />
+      </div>
     </div>
   );
 }

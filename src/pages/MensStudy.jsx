@@ -1,20 +1,12 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState,} from "react";
 import { Link } from "react-router-dom";
 import PDFModal from "../components/pdfModal/PDFModal";
 import { db } from "../firebase-config";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 export default function MensStudy() {
-  const modalRef = useRef();
-  const menRef = useRef();
   const [isModalActive, setIsModalActive] = useState(false);
   const [pdfData, setPDFData] = useState([]);
-  const [modalDimensions, setModalDimensions] = useState({
-    height: null,
-    width: null,
-    offsetLeft: null,
-    offsetTop: null,
-  });
 
   const pdfRef = collection(db, "men-pdf");
   const pdfQuery = query(pdfRef, orderBy("date", "asc"));
@@ -32,24 +24,13 @@ export default function MensStudy() {
     }
   };
 
-  const getModalDimensions = () => {
-    setModalDimensions({
-      height: modalRef.current.clientHeight,
-      width: modalRef.current.clientWidth,
-      offsetLeft: modalRef.current.offsetLeft,
-      offsetTop: modalRef.current.offsetTop,
-    });
-    console.log(modalDimensions)
-  };
 
   useEffect(() => {
     getPDF();
-    getModalDimensions();
-
-  }, [modalRef]);
+  }, []);
 
   return (
-    <div className="general-container" ref={menRef}>
+    <div className="general-container" >
       <h1 className="header">Men's Study</h1>
       <img
         className="general-image"
@@ -78,7 +59,6 @@ export default function MensStudy() {
         </span>
       </p>
       <div
-        ref={modalRef}
         className={!isModalActive ? "deactive-modal" : "active-modal"}
       >
         <PDFModal
