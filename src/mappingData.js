@@ -113,7 +113,7 @@ export const statementOfFaith = [
     },
     {
         title: 'The Bible',
-        statement: "We believe that God has spoken in the Scriptures, both Old and New Testaments, through the words of the divinely appointed human authors. God's word is without error and reveals the complete revelation of His will for salvation and the ultimate authority by which every realm of human knowledge and endeveaor should be judged. Therefore, it is to be believed in all that it teaches, obeyed in all that it requires, and trusted in all that it promeses. 2 Timothy 3: 16-17, 2 Peter 1:20-21, 1 Thessolonians 2:13."
+        statement: "We believe that God has spoken in the Scriptures, both Old and New Testaments, through the words of the divinely appointed human authors. God's word is without error and reveals the complete revelation of His will for salvation and the ultimate authority by which every realm of human knowledge and endeveaor should be judged. Therefore, it is to be believed in all that it teaches, obeyed in all that it requires, and trusted in all that it promises. 2 Timothy 3: 16-17, 2 Peter 1:20-21, 1 Thessolonians 2:13."
     },
     {
         title: 'The Human Condition',
