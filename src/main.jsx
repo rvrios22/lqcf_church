@@ -21,6 +21,7 @@ import Elders from "./pages/Elders";
 import WhatWeBelieve from "./pages/WhatWeBelieve";
 import Login from "./pages/Login";
 import NavbarFooterWrapper from "./components/NavbarFooterWrapper/NavbarFooterWrapper";
+import Studying from "./pages/Studying";
 
 const router = createHashRouter([
   {
@@ -75,6 +76,10 @@ const router = createHashRouter([
       {
         path: "/what-we-believe",
         element: <WhatWeBelieve />,
+      },
+      {
+        path: "/study",
+        element: <Studying />
       },
       {
         path: "/login",

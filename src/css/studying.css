@@ -1,0 +1,26 @@
+.study-header {
+    font-family: 'Raleway';
+    text-align: center;
+    margin: .25em .5em;
+    font-size: 1.5em;
+}
+
+.study-text {
+    font-family: 'Lato';
+    text-align: center;
+    margin: .25em;
+}
+
+.study-container:last-of-type {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 533px) {
+    .study-header, .study-text {
+        text-align: left;
+    }
+
+    .study-text {
+        padding-left: 1.5em;
+    }
+}

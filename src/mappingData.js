@@ -21,6 +21,13 @@ export const homeEvents = [
         target: "_self"
     },
     {
+        name: "Current Studies",
+        photo: "homeStudy",
+        link: "study",
+        alt: "Current Studies",
+        target: "_self"
+    },
+    {
         name: "Live Stream",
         photo: "homeLiveStream",
         link: "https://www.facebook.com/profile.php?id=100075875377675",
@@ -113,7 +120,7 @@ export const statementOfFaith = [
     },
     {
         title: 'The Bible',
-        statement: "We believe that God has spoken in the Scriptures, both Old and New Testaments, through the words of the divinely appointed human authors. God's word is without error and reveals the complete revelation of His will for salvation and the ultimate authority by which every realm of human knowledge and endeveaor should be judged. Therefore, it is to be believed in all that it teaches, obeyed in all that it requires, and trusted in all that it promises. 2 Timothy 3: 16-17, 2 Peter 1:20-21, 1 Thessolonians 2:13."
+        statement: "We believe that God has spoken in the Scriptures, both Old and New Testaments, through the words of the divinely appointed human authors. God's word is without error and reveals the complete revelation of His will for salvation and the ultimate authority by which every realm of human knowledge and endeveaor should be judged. Therefore, it is to be believed in all that it teaches, obeyed in all that it requires, and trusted in all that it promises. 2 Timothy 3:16-17, 2 Peter 1:20-21, 1 Thessolonians 2:13."
     },
     {
         title: 'The Human Condition',
@@ -158,5 +165,30 @@ export const statementOfFaith = [
     {
         title: 'Preservation of the Saints',
         statement: "We believe that God saves His church unconditionally, by His grace, and therfore, it is God who keeps and preserves His church to endure until the end. We believe that the true church can never be cast out by their redeemer and that our salvation is secure in the Lord's hands. Ephesians 2:8, 2 Timothy 4:18, Hebrews 12:2, Philippians 1:6, John 6:37-39, John 10:28, John 17:2, John 17:9, Revelation 21:1-4, Romans 8:31-39, 1 Peter 1:3-9."
+    },
+]
+
+export const studying = [
+    {
+        title: 'Sunday Service',
+        desc: ''
+    },
+    {
+        title: 'Wednesday Service',
+        desc: 'Join us for Wednesday night Bible study as we study through the book of Acts, "The History of the Church." Come and grow in your faith and in the grace and knowledge of the Lord and Savior Jesus Christ.'
+    },
+    {
+        title: 'Sunday School With Pastor Cook',
+        desc: "Pastor Cook is taking our Sunday School class through the book of 1st John. The theme of 1st John: A personal relationship with Christ is the foundation of the Christian life and out of this grows obedience to divine commands. Chapter 1: The truth about Christ. Chapter 2: The believer's lifestyle. Chapter 3: The believer's relationship to the world. Chapter 4: A message for God's children. Chapter 5: Love God and keep His commandments."
+    },
+    {
+        title: 'Sunday School with Pastor Curtis',
+        desc: `Pastor Curtis is taking the Sunday morning class through Creeds, Catechisms, Councils, and Confessions, or what some refer to as Church History. It started in Genesis Chapter 4, verse 26, with the confession; “To Seth also a son was born, and he called his name Enosh. At that time people began to call upon the name of the LORD.”
+        The study will take us through all the early essential church Councils, starting with Acts Chapter 15, the council of Jerusalem, and going through the councils of Nicaea, Constantinople, Ephesus, Chalcedon, The council of Orange, 2nd council of Nicaea, all the way through to the 19th council of Trent, and the Synod of Dort (1618-1619)
+        The study will take us through the earliest prominent Christian apologists’ who fought against heresies and false teachings, defenders of the faith such as Athanasias and St. Augustine. 
+        The study will go over the essential Orthodox Christian Creeds and Catechisms, including, The Shema (Deuteronomy 6:4-7), 1st Corinthians 15:1-11, the Didache, The Athanasian Creed, The Apostles Creed, and the Nicene Creed.
+        The study will go over the essential Orthodox Protestant Catechisms, including the Heidelberg Catechism (1563) and the Westminster Shorter Catechism (1648).
+        The study will go over the essential Orthodox Protestant Christian confessions, including the Belgic Confession (1561), The Westminster Confession of Faith (1640), The 1689 London Baptist Confession and the 5 solas of the Reformation.
+        The study will go over Protestant Reformation, and we will learn about the prominent men of God that God raised up and used to reform the church and what they believed and taught about the scriptures. We will get to know about Jon Hus, John Wycliffe, William Tyndale, Martin Luther, Ulrich Zwingli, and John Calvin.  We will also go through the 15 Articles of the Marburg Colloquy (1529).`
     },
 ]

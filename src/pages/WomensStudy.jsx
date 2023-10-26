@@ -50,7 +50,7 @@ export default function WomensStudy() {
         with those we encounter.
       </p>
       <p className="general-text">
-        Bible studies are hosted in a casual environment at Jennife's home, on
+        Bible studies are hosted in a casual environment at Jennifer's home, on
         the 2nd and 4th Friday of each month (any variations will be posted in
         the{" "}
         <Link to="/events">
