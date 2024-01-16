@@ -7,30 +7,30 @@ import "./App.css";
 
 import ErrorPage from "./pages/ErrorPage";
 
-import Home from "./pages/Home";
-import Giving from "./pages/Giving";
-import Events from "./pages/Events";
-import Prayer from "./pages/Prayer";
-import LQCFSchool from "./pages/LQCFSchool";
-import IdentityYouth from "./pages/IdentityYouth";
-import MensStudy from "./pages/MensStudy";
-import WomensStudy from "./pages/WomensStudy";
-import PrayerChain from "./pages/PrayerChain";
-import Missionary from "./pages/Missionary";
-import Elders from "./pages/Elders";
-import WhatWeBelieve from "./pages/WhatWeBelieve";
-import Login from "./pages/Login";
-import NavbarFooterWrapper from "./components/NavbarFooterWrapper/NavbarFooterWrapper";
-import Studying from "./pages/Studying";
+import Home from "./pages/home/Home";
+import Giving from "./pages/giving/Giving";
+import Events from "./pages/events/Events";
+import Prayer from "./pages/prayer/Prayer";
+import LQCFSchool from "./pages/lqcfSchool/LQCFSchool";
+import IdentityYouth from "./pages/identityYouth/IdentityYouth";
+import MensStudy from "./pages/mensStudy/MensStudy";
+import WomensStudy from "./pages/womensStudy/WomensStudy";
+import PrayerChain from "./pages/prayerChain/PrayerChain";
+import Missionary from "./pages/missionary/Missionary";
+import Elders from "./pages/elders/Elders";
+import WhatWeBelieve from "./pages/whatWeBelieve/WhatWeBelieve";
+import Login from "./pages/login/Login";
+import Studying from "./pages/studying/Studying";
+import Root from "./pages/Root";
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <NavbarFooterWrapper />,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home />,
       },
       {
@@ -79,7 +79,7 @@ const router = createHashRouter([
       },
       {
         path: "/study",
-        element: <Studying />
+        element: <Studying />,
       },
       {
         path: "/login",

@@ -1,0 +1,15 @@
+.landing-image {
+    margin: 0 auto;
+    width: 80%;
+    max-height: 90vh;
+    object-fit: cover;
+    border-radius: 7px;
+    max-width: 1300px;
+}
+
+
+@media (min-width: 1000px) {
+    .landing-image {
+        margin: .5em auto;
+    }
+}

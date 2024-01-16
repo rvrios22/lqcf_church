@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
-import "../../css/mobile-navbar.css";
+import "./mobile-navbar.css";
 import { ministry, navbarData, whoWeAre } from "../navbar/navbarData";
 import { Link, useLocation } from "react-router-dom";
-import Ministry from "../ministry/Ministry";
 
 export default function MobileNavbar() {
   const [mobileBarIsOpen, setMobileBarIsOpen] = useState(false);
