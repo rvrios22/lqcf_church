@@ -4,8 +4,10 @@ import { auth, db } from "../../firebase-config";
 import "./events.css";
 import AddEvent from "../../components/addEvent/AddEvent";
 import EventsMap from "../../components/eventsMap/EventsMap";
+import Loader from "../../components/loader/Loader";
 
 export default function Events() {
+  const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState(false);
   const [eventsData, setEventsData] = useState([]);
   const eventsRef = collection(db, "events");
@@ -13,6 +15,7 @@ export default function Events() {
 
   const getEvents = async () => {
     try {
+      setIsLoading(true);
       const eventsData = await getDocs(eventQuery);
       const filteredEventsData = eventsData.docs.map((doc) => ({
         ...doc.data(),
@@ -21,6 +24,9 @@ export default function Events() {
       setEventsData(filteredEventsData);
     } catch (error) {
       console.error(error);
+      alert(error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -33,7 +39,11 @@ export default function Events() {
 
   return (
     <div className="events-parent event-container">
-      <EventsMap eventsData={eventsData} getEvents={getEvents} user={user} />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <EventsMap eventsData={eventsData} getEvents={getEvents} user={user} />
+      )}
       {user && <AddEvent getEvents={getEvents} eventsRef={eventsRef} />}
     </div>
   );

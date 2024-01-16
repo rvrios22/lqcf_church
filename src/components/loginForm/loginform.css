@@ -1,0 +1,12 @@
+.login-form {
+    text-align: center;
+}
+.login-form > * {
+    margin-bottom: .25em;
+    text-align: center;
+}
+
+.login-form-button {
+    margin: .25em;
+    text-align: center;
+}
