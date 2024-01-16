@@ -30,7 +30,6 @@ export default function Navbar() {
 
   return (
     <div className="navbar-container">
-      <MobileNavbar />
       <div className="navbar-flex-container">
         <div>
           <Link to="/">LQCF Church</Link>
@@ -63,7 +62,6 @@ export default function Navbar() {
           ))}
         </div>
       </div>
-      <hr className="navbar-divider" />
     </div>
   );
 }

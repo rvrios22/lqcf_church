@@ -1,14 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../components/footer/Footer";
-import Navbar from "../components/navbar/Navbar";
+import Header from "../components/header/Header";
 
 export default function Root() {
   return (
-    <>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
+    <div className="app-wrapper">
+      <div>
+        <Header />
+        <Outlet />
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </div>
   );
 }

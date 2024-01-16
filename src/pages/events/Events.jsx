@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { auth, db } from "../../firebase-config";
 import "./events.css";
-import Event from "../../components/event/Event";
 import AddEvent from "../../components/addEvent/AddEvent";
 import EventsMap from "../../components/eventsMap/EventsMap";
 

@@ -1,14 +1,15 @@
-@media (min-width: 600px) {
-    .mobile-navbar-container {
-        display: none;
-    }
-}
-
-.mobile-navbar-menu-icon {
-    display: inline-block;
-    position: relative;
-    left: 90%;
+.mobile-navbar-container {
     position: sticky;
+    top: 0;
+    height: 2em;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.mobile-navbar-menu-icon {
+    position: absolute;
+    top: .25em;
+    right: 1em;
+    z-index: 30;
 }
 
 .mobile-navbar-links-container {
@@ -23,11 +24,11 @@
     gap: 5px;
     opacity: .95;
     z-index: 3;
+    border-bottom: 1px solid black;
 }
 
 .mobile-navbar-open-menu {
-    /* position: relative; */
-    background-color: rgb(184, 184, 184);
+    background-color: rgba(54, 187, 227, 0.554);
     width: 100%;
     text-align: center;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);

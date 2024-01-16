@@ -35,7 +35,6 @@
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
-    position: relative;
 }
 
 .general-link {
@@ -58,32 +57,11 @@ textarea {
     max-width: 800px;
 }
 
-.flex-footer {
+.app-wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.upper-child {
-    flex: auto;
-    /* position: relative; */
-}
-
-.footer-child {
-    bottom: 2vh;
-}
-
-.working {
-    position: fixed;
-    bottom: 0;
-    padding: 1em;
-    background-color: gray;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(54, 187, 227, 0.9);
+    justify-content: space-between;
 }
 
 .modal-click {
@@ -93,15 +71,6 @@ textarea {
 .modal-click:hover {
     cursor: pointer;
     color: blue;
-}
-
-.close-icon {
-    display: flex;
-    cursor: pointer;
-}
-
-.hidden {
-    display: none;
 }
 
 @media (min-width: 700px) {

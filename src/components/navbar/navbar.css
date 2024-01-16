@@ -1,18 +1,18 @@
 .navbar-container {
     position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    margin: 1em auto;
     padding: 0 1em;
+    top: 0;
     width: 100%;
     background-color: white;
     z-index: 4;
+    border-bottom: 1px solid black;
 }
 
 .navbar-flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    height: 2.5em;
 }
 
 .navbar-list {
@@ -37,19 +37,15 @@
 }
 
 .who-we-are {
+    top: 2.25em;
     right: 18em;
 }
 
 .ministry {
+    top: 2.25em;
     right: 12.5em;
 }
 
 .navbar-divider {
     margin: 0;
-}
-
-@media (max-width: 599px) {
-    .navbar-container {
-        display: none;
-    }
 }
