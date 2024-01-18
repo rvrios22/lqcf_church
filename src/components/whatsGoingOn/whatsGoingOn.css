@@ -1,7 +1,9 @@
 .event-image {
+    height: 100%;
     max-width: 80%;
     margin: 0 auto;
     border-radius: 7px;
+    object-fit: fill;
 }
 
 @media (min-width: 600px) {
@@ -17,7 +19,6 @@
         border-radius: 7px;
         min-width: 100%;
         max-height: 70%;
-        object-fit: cover;
     }
 }
 

@@ -50,8 +50,8 @@ function ElderMap() {
               className="elder-image"
               src={
                 screenWidth.width >= 800
-                  ? `./${elder.portrait}.jpg`
-                  : `./${elder.landscape}.jpg`
+                  ? `./${elder.portrait}.avif`
+                  : `./${elder.landscape}.avif`
               }
               alt={elder.name}
               ref={imageRef}

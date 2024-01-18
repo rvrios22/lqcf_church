@@ -8,7 +8,7 @@ function WomensStudyInfo({ setIsModalActive, isModalActive }) {
       <h1 className="header">Women's Ministry</h1>
       <img
         className="general-image"
-        src="/womensStudyHeader.jpg"
+        src="/womensStudyHeader.avif"
         alt="Women's ministry at an outreach"
       />
       <p className="general-text">

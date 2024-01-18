@@ -25,7 +25,7 @@ export default function Footer() {
 
         <img
           className="church-map"
-          src="./churchMap.jpg"
+          src="./churchMap.avif"
           alt="a map where the church is located"
         />
       </div>

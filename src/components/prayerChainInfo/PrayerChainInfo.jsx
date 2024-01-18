@@ -6,7 +6,7 @@ function PrayerChainInfo() {
     <div className="general-container">
       <h1 className="header">Prayer Ministry</h1>
       <img
-        src="./prayerChainHeader.jpg"
+        src="./prayerChainHeader.avif"
         alt="Praying hands"
         className="general-image"
       />

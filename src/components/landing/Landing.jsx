@@ -5,7 +5,7 @@ function Landing() {
   return (
     <>
       <h1 className="header">La Quinta Christian Fellowship Church</h1>
-      <img className="landing-image" alt="LQCF Church" src="./lqcfHome.jpg" />
+      <img className="landing-image" alt="LQCF Church" src="./lqcfHome.avif"/>
       <div className="general-container">
         <p className="general-text">
           La Quinta Christian Fellowship Church is a non-denominational

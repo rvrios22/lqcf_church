@@ -7,7 +7,7 @@ function MensStudyInfo({ setIsModalActive, isModalActive }) {
       <h1 className="header">Men's Study</h1>
       <img
         className="general-image"
-        src="./mensStudyHeader.jpg"
+        src="./mensStudyHeader.avif"
         alt="Man reading a bible"
       />
       <p className="general-text">
