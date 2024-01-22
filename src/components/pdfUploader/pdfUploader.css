@@ -5,10 +5,18 @@
     padding: .5em;
 }
 
-.pdf-uploader-container > * {
+input[type=file] {
+    margin: auto;
+}
+
+.pdf-uploader-container>* {
     margin-bottom: .5em;
 }
 
-input[type='file'] {
-    margin-right: 0;
+@media (min-width: 1000px) {
+    .pdf-flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2em;
+    }
 }
