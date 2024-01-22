@@ -32,7 +32,7 @@ export default function Footer() {
       <p className="general-text rios-link">
         Developed and maintained by{" "}
         <a
-          href="http://riosdevelopment.tech"
+          href="http://riosdev.com"
           target="_blank"
           rel="noopener noreferrer"
         >

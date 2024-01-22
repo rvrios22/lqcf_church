@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from "react";
 import PDFModal from "../../components/pdfModal/PDFModal";
 import { db } from "../../firebase-config";
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  orderBy,
+  query,
+  setDoc,
+  doc,
+} from "firebase/firestore";
 import "./womensStudy.css";
 import WomensStudyInfo from "../../components/womensStudyInfo/WomensStudyInfo";
 
@@ -9,7 +16,7 @@ export default function WomensStudy() {
   const [isModalActive, setIsModalActive] = useState(false);
   const [pdfData, setPDFData] = useState([]);
 
-  const pdfRef = collection(db, "women-terms-pdf");
+  const pdfRef = collection(db, "termsAndDefinitions-women");
   const pdfQuery = query(pdfRef, orderBy("title", "asc"));
 
   const getPDF = async () => {
@@ -25,6 +32,8 @@ export default function WomensStudy() {
     }
   };
 
+
+
   useEffect(() => {
     getPDF();
   }, []);
@@ -35,7 +44,6 @@ export default function WomensStudy() {
         setIsModalActive={setIsModalActive}
         isModalActive={isModalActive}
       />
-      
       <div className={!isModalActive ? "deactive-modal" : "active-modal"}>
         <PDFModal
           data={pdfData}

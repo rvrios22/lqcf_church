@@ -11,11 +11,14 @@ function MensStudyInfo({ setIsModalActive, isModalActive }) {
         alt="Man reading a bible"
       />
       <p className="general-text">
-        Our Men's Ministry is lead by Pastor Curtis Claire. For the past year,
-        our men have been studying the attributes of God using an outline of the
-        shorter Westminster Catechism "A Body of Divinity" by Thomas Watson. We
-        meet at 7:30 AM in the sanctuary of the church every 2nd and 4th
-        Saturday of each month. Please see our{" "}
+        Our men's ministry is led by Pastor Curtis Claire. We are currently
+        studying the Trinity, which is one of the oldest Orthodox teachings of
+        the Christian faith. The teaching that "God is like an egg" is both
+        heretical and falls far short of knowing the glory and splendor of our
+        true Triune God. If rejection of the Trinity equates to heresy, then it
+        is vital that we, the church, get it right. We meet at 7:30 AM in the
+        sanctuary of the church every 2nd and 4th Saturday of each month. Please
+        see our{" "}
         <Link to="/events">
           <span className="general-link">events</span>
         </Link>{" "}

@@ -1,0 +1,14 @@
+.pdf-uploader-container {
+    margin: 0 auto 1em;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: .5em;
+}
+
+.pdf-uploader-container > * {
+    margin-bottom: .5em;
+}
+
+input[type='file'] {
+    margin-right: 0;
+}
