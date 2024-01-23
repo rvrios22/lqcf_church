@@ -40,11 +40,11 @@ export default function MensStudy() {
         setIsModalActive={setIsModalActive}
         isModalActive={isModalActive}
       />
-      {/* {user && <PDFUploader />} */}
-      <PDFUploader />
+      {user && <PDFUploader />}
 
       <div className={!isModalActive ? "deactive-modal" : "active-modal"}>
         <PDFModal
+          setData={setPDFData}
           data={pdfData}
           setModal={setIsModalActive}
           modal={isModalActive}
