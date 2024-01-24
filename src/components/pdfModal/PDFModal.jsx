@@ -21,24 +21,22 @@ function PDFModal({ setPDFData, data, setModal, modal }) {
       <div onClick={() => setModal(!modal)} className="close-icon">
         <Close />
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
+      <div className="modal-grid-container">
+        <div className="modal-headers">
+          <h4>Title</h4>
+          <h4>Date</h4>
+        </div>
+        <div className="modal-items">
           {newData.map((pdf) => (
-            <tr key={pdf.id}>
-              <a href={pdf.link} target="_blank">
-                <td>{pdf.title}</td>
-                <td>{pdf.date}</td>
+            <div key={pdf.id} className="modal-row">
+              <a href={pdf.link} target="_blank" rel="noopener noreferrer">
+                <p>{pdf.title}</p>
               </a>
-            </tr>
+                <p>{pdf.date}</p>
+            </div>
           ))}
-        </tbody>
-      </table>
+        </div>
+      </div>
     </div>
   );
 }

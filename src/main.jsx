@@ -27,9 +27,7 @@ const router = createHashRouter([
   {
     path: "/",
     element: (
-      <Suspense fallback={<Loader />}>
         <Root />
-      </Suspense>
     ),
     errorElement: <ErrorPage />,
     children: [

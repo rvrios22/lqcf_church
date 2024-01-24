@@ -4,6 +4,7 @@
     height: 2em;
     background-color: white;
     border-bottom: 1px solid black;
+    z-index: 3;
 }
 .mobile-navbar-menu-icon {
     position: absolute;
@@ -23,7 +24,7 @@
     align-items: center;
     gap: 5px;
     opacity: .95;
-    z-index: 3;
+    z-index: 4;
     border-bottom: 1px solid black;
 }
 

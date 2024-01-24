@@ -10,13 +10,14 @@
     font-family: 'Raleway';
     text-align: center;
     margin: .25em .5em;
-    font-size: 1.5em;
+    font-size: clamp(20px, 5vw, 34px);
 }
 
 .sub-header {
     font-family: 'Raleway';
     text-align: center;
     margin: .25em;
+    font-size: clamp(18px, 4vw, 30px);
 }
 
 .general-image {
@@ -26,6 +27,7 @@
 }
 
 .general-text {
+    font-size: clamp(17px, 2vw, 20px);
     font-family: 'Lato';
     text-align: center;
     margin: .25em;
@@ -43,7 +45,7 @@
 
 .bible-text {
     font-family: 'Dancing Script';
-    font-size: 1.33em;
+    font-size: clamp(17px, 4vw, 24px);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
