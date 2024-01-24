@@ -7,10 +7,9 @@ import MensStudyInfo from "../../components/mensStudyInfo/MensStudyInfo";
 import PDFUploader from "../../components/pdfUploader/PDFUploader";
 
 export default function MensStudy() {
-  const [isModalActive, setIsModalActive] = useState(false);
+  const [isModalActive, setIsModalActive] = useState(true);
   const [pdfData, setPDFData] = useState([]);
   const [user, setUser] = useState(false);
-
   const pdfRef = collection(db, "trinity-men");
   const pdfQuery = query(pdfRef, orderBy("date", "asc"));
 

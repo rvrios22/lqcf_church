@@ -34,7 +34,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgba(54, 187, 227);
+    background-color: rgb(202, 226, 251);
     border: 1px solid black;
     border-radius: 7px;
     z-index: 2;
@@ -57,13 +57,30 @@
 
 .modal-headers {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1em;
     position: sticky;
     top: 0;
     background-color: white;
-    border-bottom: 1px solid black;
     font-family: 'Raleway';
     font-size: clamp(18px, 4vw, 26px);
+    border-bottom: 1px solid black;
+}
+
+.modal-selector {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway';
+    /* font-size: .75em; */
+    background-color: white;
+}
+
+.modal-selector select:hover {
+    cursor: pointer;
+}
+
+.modal-selector>* {
+    margin: .5em 0 0 6px
 }
 
 .modal-row a {
@@ -72,22 +89,10 @@
 
 .modal-row a:hover {
     color: blue;
-    text-shadow:
-    1px 1px 0 #bababa,
-    -1px 1px 0 #bababa,
-    -1px -1px 0 #bababa,
-    1px -1px 0 #bababa
 }
 
 .modal-row {
-    color: white;
     font-size: clamp(17px, 4vw, 24px);
-    text-align: center;
-    text-shadow:
-        1px 1px 0 #2f2f2f,
-        -1px 1px 0 #2f2f2f,
-        -1px -1px 0 #2f2f2f,
-        1px -1px 0 #2f2f2f;
     border-bottom: 1px solid black;
 }
 
@@ -100,9 +105,11 @@
 @media (min-width: 500px) {
     .modal-row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 1em;
     }
-    .close-icon{
+
+    .close-icon {
         right: 10px;
     }
 }
