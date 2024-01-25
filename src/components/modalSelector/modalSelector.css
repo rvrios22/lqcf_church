@@ -1,9 +1,15 @@
 .modal-selector {
-    display: flex;
-    justify-content: flex-start;
     font-family: 'Raleway';
-    /* font-size: .75em; */
-    background-color: white;
+}
+
+.modal-selector label {
+    margin: 0;
+    text-align: center;
+}
+
+.modal-selector select {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .modal-selector select:hover {
@@ -12,4 +18,21 @@
 
 .modal-selector>* {
     margin: .5em 0 0 6px
+}
+
+@media (min-width: 500px) {
+    .modal-selector {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .modal-selector select {
+        width: 60%;
+        margin: 6px 0 0 6px;
+    }
+
+    .modal-selector label {
+        margin-top: 6px;
+        margin-left: 6px;
+    }
 }

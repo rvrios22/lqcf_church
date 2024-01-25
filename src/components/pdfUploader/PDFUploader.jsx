@@ -34,7 +34,6 @@ function PDFUploader() {
 
   const handleDateChange = (e) => {
     const newDate = new Date(e.target.value);
-    console.log(newDate);
     setDate(newDate);
   };
 
@@ -94,7 +93,6 @@ function PDFUploader() {
       (snapshot) => {
         const progress =
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        console.log("upload is " + progress + "% done");
       },
       (error) => {
         console.error(error);

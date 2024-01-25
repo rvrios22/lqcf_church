@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./MensStudyInfo.css";
 function MensStudyInfo({ setIsModalActive, isModalActive }) {
+  const handleOnCLick = () => {
+    setIsModalActive(!isModalActive);
+  };
   return (
     <>
       <h1 className="header">Men's Study</h1>
@@ -29,7 +32,7 @@ function MensStudyInfo({ setIsModalActive, isModalActive }) {
         To see a list of all of the outlines in this series click{" "}
         <span
           className="modal-click"
-          onClick={() => setIsModalActive(!isModalActive)}
+          onClick={handleOnCLick}
         >
           here
         </span>
