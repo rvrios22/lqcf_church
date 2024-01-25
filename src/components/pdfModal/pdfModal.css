@@ -67,21 +67,7 @@
     border-bottom: 1px solid black;
 }
 
-.modal-selector {
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Raleway';
-    /* font-size: .75em; */
-    background-color: white;
-}
 
-.modal-selector select:hover {
-    cursor: pointer;
-}
-
-.modal-selector>* {
-    margin: .5em 0 0 6px
-}
 
 .modal-row a {
     color: inherit;

@@ -10,7 +10,8 @@ export default function MensStudy() {
   const [isModalActive, setIsModalActive] = useState(true);
   const [pdfData, setPDFData] = useState([]);
   const [user, setUser] = useState(false);
-  const pdfRef = collection(db, "trinity-men");
+  const [studyCollection, setStudyCollection] = useState("trinity-men");
+  const pdfRef = collection(db, studyCollection);
   const pdfQuery = query(pdfRef, orderBy("date", "asc"));
 
   const getPDF = async () => {
@@ -31,7 +32,7 @@ export default function MensStudy() {
       setUser(true);
     }
     getPDF();
-  }, []);
+  }, [studyCollection]);
 
   return (
     <div className="general-container">
@@ -47,6 +48,7 @@ export default function MensStudy() {
           data={pdfData}
           setModal={setIsModalActive}
           modal={isModalActive}
+          setStudyCollection={setStudyCollection}
         />
       </div>
     </div>
