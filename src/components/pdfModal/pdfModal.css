@@ -71,7 +71,19 @@
     border-bottom: 1px solid black;
 }
 
+.modal-header-container {
+    display: flex;
+    align-items: center;
+}
 
+.modal-arrow-contianer {
+    display: flex;
+    max-height: 100%;
+}
+
+.hidden {
+    display: none;
+}
 
 .modal-row a {
     color: inherit;

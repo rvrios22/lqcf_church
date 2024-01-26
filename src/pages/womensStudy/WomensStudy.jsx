@@ -8,7 +8,7 @@ import PDFUploader from "../../components/pdfUploader/PDFUploader";
 import { useLocation } from "react-router-dom";
 
 export default function WomensStudy() {
-  const [isModalActive, setIsModalActive] = useState(false);
+  const [isModalActive, setIsModalActive] = useState(true);
   const [pdfData, setPDFData] = useState([]);
   const [locationIsSet, setLocationIsSet] = useState(false);
   const [studyCollection, setStudyCollection] = useState("");
