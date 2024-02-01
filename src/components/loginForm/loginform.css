@@ -10,3 +10,19 @@
     margin: .25em;
     text-align: center;
 }
+
+.input-error {
+    border: 1px solid rgb(255, 4, 4);
+}
+
+.login-error-message {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid rgb(148, 39, 39);
+    border-radius: 10px;
+    color: rgb(176, 0, 0);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    background-color: rgb(252, 195, 195);
+}

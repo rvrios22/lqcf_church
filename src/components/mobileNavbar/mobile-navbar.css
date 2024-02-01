@@ -6,6 +6,14 @@
     border-bottom: 1px solid black;
     z-index: 3;
 }
+
+.mobile-navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .mobile-navbar-menu-icon {
     position: absolute;
     top: .25em;

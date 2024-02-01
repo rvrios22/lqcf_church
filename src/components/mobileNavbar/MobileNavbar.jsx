@@ -6,7 +6,11 @@ import "./mobile-navbar.css";
 import { ministry, navbarData, whoWeAre } from "../navbar/navbarData";
 import { Link, useLocation } from "react-router-dom";
 
-export default function MobileNavbar() {
+export default function MobileNavbar({
+  userIsLoggedIn,
+  userEmail,
+  handleSignout,
+}) {
   const [mobileBarIsOpen, setMobileBarIsOpen] = useState(false);
   const [ministryIsOpen, setMinistryIsOpen] = useState(false);
   const [whoWeAreIsOpen, setWhoWeAreIsOpen] = useState(false);
@@ -20,11 +24,14 @@ export default function MobileNavbar() {
 
   return (
     <div className="mobile-navbar-container">
-      <div
-        className="mobile-navbar-menu-icon"
-        onClick={() => setMobileBarIsOpen(!mobileBarIsOpen)}
-      >
-        <MenuIcon />
+      <div className="mobile-navbar-header">
+        {userIsLoggedIn && <p className="general-text">Welcome, {userEmail}</p>}
+        <div
+          className="mobile-navbar-menu-icon"
+          onClick={() => setMobileBarIsOpen(!mobileBarIsOpen)}
+        >
+          <MenuIcon />
+        </div>
       </div>
       <div
         className={
@@ -33,7 +40,7 @@ export default function MobileNavbar() {
             : `closed-mobile-navbar-general`
         }
       >
-        <Link to={'/'}>Home</Link>
+        <Link to={"/"}>Home</Link>
         <span onClick={() => setMinistryIsOpen(!ministryIsOpen)}>Ministry</span>
         <div
           className={
@@ -48,7 +55,9 @@ export default function MobileNavbar() {
             </Link>
           ))}
         </div>
-        <span onClick={() => setWhoWeAreIsOpen(!whoWeAreIsOpen)}>Who We Are</span>
+        <span onClick={() => setWhoWeAreIsOpen(!whoWeAreIsOpen)}>
+          Who We Are
+        </span>
         <div
           className={
             whoWeAreIsOpen
@@ -67,6 +76,7 @@ export default function MobileNavbar() {
             <span>{data.name}</span>
           </Link>
         ))}
+        {userIsLoggedIn && <div onClick={handleSignout}>Logout</div>}
       </div>
     </div>
   );

@@ -81,6 +81,10 @@
     max-height: 100%;
 }
 
+.modal-arrow-contianer:hover {
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
 }

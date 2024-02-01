@@ -15,6 +15,20 @@
     height: 2.5em;
 }
 
+.navbar-user-container {
+    display: inline;
+    margin-left: 1em;
+}
+
+.navbar-user-container>* {
+    margin: .5em;
+}
+
+.logout:hover {
+    cursor: pointer;
+    color: blue;
+}
+
 .navbar-list {
     padding-left: 1em;
     display: inline;
@@ -28,7 +42,7 @@
     border-radius: 7px;
     width: 10em;
     top: 1.25em;
-    
+
 }
 
 .drop-down-ref {
@@ -43,9 +57,5 @@
 
 .ministry {
     top: 2.25em;
-    right: 12.5em;
-}
-
-.navbar-divider {
-    margin: 0;
+    right: 12em;
 }
