@@ -24,27 +24,38 @@
 .mobile-navbar-links-container {
     background-color: white;
     width: 100%;
-    height: 66vh;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    height: 55vh;
     opacity: .95;
     z-index: 4;
     border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 4em;
+    font-size: clamp(17px, 2vw, 20px);
+    font-family: 'Lato';
+}
+
+.mobile-navbar-links-container >* {
+    display: block;
+    margin-top: 10px;
+}
+
+.mobile-navbar-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-flex {
+    display: flex;
 }
 
 .mobile-navbar-open-menu {
     background-color: rgba(54, 187, 227, 0.554);
-    width: 100%;
-    text-align: center;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+    margin: 0;
 }
 
 .closed-mobile-navbar-general {
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-
     display: none;
 }
