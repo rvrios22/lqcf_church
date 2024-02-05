@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-
 import MenuIcon from "@mui/icons-material/Menu";
-
 import "./mobile-navbar.css";
 import { ministry, navbarData, whoWeAre } from "../navbar/navbarData";
 import { Link, useLocation } from "react-router-dom";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 export default function MobileNavbar({
   userIsLoggedIn,
@@ -41,7 +41,19 @@ export default function MobileNavbar({
         }
       >
         <Link to={"/"}>Home</Link>
-        <span onClick={() => setMinistryIsOpen(!ministryIsOpen)}>Ministry</span>
+        <div
+          className="mobile-navbar-flex-container"
+          onClick={() => setMinistryIsOpen(!ministryIsOpen)}
+        >
+          <p>Ministry</p>
+          <span className="span-flex">
+            {ministryIsOpen ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </span>
+        </div>
         <div
           className={
             ministryIsOpen
@@ -55,9 +67,16 @@ export default function MobileNavbar({
             </Link>
           ))}
         </div>
-        <span onClick={() => setWhoWeAreIsOpen(!whoWeAreIsOpen)}>
-          Who We Are
-        </span>
+        <div className="mobile-navbar-flex-container" onClick={() => setWhoWeAreIsOpen(!whoWeAreIsOpen)}>
+          <p>Who We Are</p>
+          <span className="span-flex">
+            {ministryIsOpen ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </span>
+        </div>
         <div
           className={
             whoWeAreIsOpen
@@ -73,10 +92,10 @@ export default function MobileNavbar({
         </div>
         {navbarData.map((data) => (
           <Link key={data.name} to={data.link}>
-            <span>{data.name}</span>
+            <>{data.name}</>
           </Link>
         ))}
-        {userIsLoggedIn && <div onClick={handleSignout}>Logout</div>}
+        {userIsLoggedIn && <p onClick={handleSignout}>Logout</p>}
       </div>
     </div>
   );
