@@ -70,7 +70,7 @@ export default function MobileNavbar({
         <div className="mobile-navbar-flex-container" onClick={() => setWhoWeAreIsOpen(!whoWeAreIsOpen)}>
           <p>Who We Are</p>
           <span className="span-flex">
-            {ministryIsOpen ? (
+            {whoWeAreIsOpen ? (
               <KeyboardArrowUpIcon />
             ) : (
               <KeyboardArrowDownIcon />
