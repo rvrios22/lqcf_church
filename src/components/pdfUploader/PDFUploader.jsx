@@ -69,12 +69,16 @@ function PDFUploader() {
         setFirebaseCollection("trinity-men");
         break;
       case "Attributes of God - Women":
-        setFileDirectory("/attributesOfGod-women");
+        setFileDirectory("attributesOfGod-women/");
         setFirebaseCollection("attributesOfGod-women");
         break;
       case "Terms and Definitions":
         setFileDirectory("womenPDF/");
         setFirebaseCollection("termsAndDefinitions-women");
+        break;
+      case "Church History":
+        setFileDirectory("churchHistory/");
+        setFirebaseCollection("churchHistory");
         break;
       default:
         "invalid selection";
@@ -123,6 +127,7 @@ function PDFUploader() {
               Attributes of God - Women
             </option>
             <option value="Terms and Definitions">Terms and Definitions</option>
+            <option value="Church History">Church History</option>
           </select>
         </div>
         <div>

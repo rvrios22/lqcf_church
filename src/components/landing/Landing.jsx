@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./landing.css";
 
 function Landing() {
+  const [imgDimensions, setImgDimensions] = useState({ height: 0, width: 0 });
+
+  console.log(window.innerHeight - 43.5)
+  const handleImgDimensions = (e) => {
+    setImgDimensions({ height: window.innerHeight - 43.5, width: window.innerWidth });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleImgDimensions);
+
+    return () => {
+      window.removeEventListener("resize", handleImgDimensions);
+    };
+  }, []);
   return (
     <>
-      <h1 className="header">La Quinta Christian Fellowship Church</h1>
-      <img className="landing-image" alt="LQCF Church" src="./lqcfHome.avif"/>
+      <div className="home-page-landing">
+        <h1 className="header home-page-header">
+          La Quinta Christian Fellowship Church
+        </h1>
+        <img
+          className="landing-image"
+          alt="LQCF Church"
+          src="./lqcfHome.avif"
+          onLoad={handleImgDimensions}
+          height={imgDimensions.height}
+          width={imgDimensions.width}
+        />
+      </div>
       <div className="general-container">
         <p className="general-text">
           La Quinta Christian Fellowship Church is a non-denominational

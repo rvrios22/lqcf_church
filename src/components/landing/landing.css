@@ -1,15 +1,26 @@
-.landing-image {
-    margin: 0 auto;
-    width: 80%;
-    max-height: 90vh;
-    object-fit: cover;
-    border-radius: 7px;
-    max-width: 1300px;
+.home-page-landing {
+    position: relative;
 }
 
+.landing-image {
+    margin: 0 auto;
+    /* width: 100%;
+    height: calc(100vh - 2em); */
+    object-fit: cover;
+    opacity: .8;
+}
 
-@media (min-width: 1000px) {
-    .landing-image {
-        margin: .5em auto;
-    }
+.home-page-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: whitesmoke;
+    text-shadow:
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
+    font-size: clamp(22px, 5vw, 100px);
 }

@@ -23,6 +23,7 @@ function ModalSelector({
         <option value="attributesOfGod-men">Attributes of God - Men</option>
         <option value="termsAndDefinitions-women">Terms and Definitions</option>
         <option value="attributesOfGod-women">Attributes of God - Women</option>
+        <option value="churchHistory">Church History</option>
       </select>
     </div>
   );
