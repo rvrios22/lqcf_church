@@ -4,9 +4,12 @@ import "./landing.css";
 function Landing() {
   const [imgDimensions, setImgDimensions] = useState({ height: 0, width: 0 });
 
-  console.log(window.innerHeight - 43.5)
+  console.log(window.innerHeight - 43.5);
   const handleImgDimensions = (e) => {
-    setImgDimensions({ height: window.innerHeight - 43.5, width: window.innerWidth });
+    setImgDimensions({
+      height: window.innerHeight - 43.5,
+      width: window.innerWidth,
+    });
   };
 
   useEffect(() => {
@@ -19,7 +22,11 @@ function Landing() {
   return (
     <>
       <div className="home-page-landing">
-        <h1 className="header home-page-header">
+        <h1
+          className={`header home-page-header ${
+            imgDimensions.height ? "visible" : ""
+          }`}
+        >
           La Quinta Christian Fellowship Church
         </h1>
         <img
@@ -27,8 +34,12 @@ function Landing() {
           alt="LQCF Church"
           src="./lqcfHome.avif"
           onLoad={handleImgDimensions}
-          height={imgDimensions.height}
-          width={imgDimensions.width}
+          height={
+            !imgDimensions.height
+              ? window.innerHeight - 43.5
+              : imgDimensions.height
+          }
+          width={!imgDimensions.width ? window.innerWidth : imgDimensions.width}
         />
       </div>
       <div className="general-container">

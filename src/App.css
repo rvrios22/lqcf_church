@@ -78,6 +78,7 @@ select {
     color: blue;
 }
 
+
 @media (min-width: 700px) {
     .general-image {
         width: 40%;
