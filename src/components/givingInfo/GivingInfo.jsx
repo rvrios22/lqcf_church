@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import "./givingInfo.css";
 
 function GivingInfo() {
+  const ref = useRef(null);
+
+  const handleCSS = () => {
+    ref.current.style.color = "blue";
+  };
   return (
     <div>
       <h1 className="header">Tithes and Offerings</h1>
@@ -26,8 +32,30 @@ function GivingInfo() {
           <p className="general-text">
             Mail your offering to: P.O. Box 676 La Quinta, CA 92247
           </p>
+          {/* <p className="general-text">
+            Give online by clicking {""}
+            <a
+              href="https://www.zeffy.com/donation-form/5da45795-5ea3-42d7-8d39-bb107f0ce0db"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="general-link">here</span>
+            </a>
+          </p> */}
         </div>
       </div>
+
+      {/* <div className="zeffy-container">
+        <iframe
+          title="Donation form powered by Zeffy"
+          className="zeffy-frame"
+          src="https://www.zeffy.com/embed/donation-form/5da45795-5ea3-42d7-8d39-bb107f0ce0db"
+          allowpaymentrequest="true"
+          allowtransparency="true"
+          ref={ref}
+          onLoad={handleCSS}
+        ></iframe>
+      </div> */}
     </div>
   );
 }

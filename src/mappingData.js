@@ -140,7 +140,7 @@ export const statementOfFaith = [
     },
     {
         title: 'The Holy Spirit',
-        statement: "We believe that the Holy Spirit, in all that He does, glorifies the Lord Jesus Christ. He convicts the world regarding sin. He regenerates sinners, those who are otherwise dead in their sin by making them be born again and ailve in Christ. In Him believers are baptized into union with Christ and adpoted as heirs in the family of God. He also indwells, illuminates, guides, equips, and empowers His church for Christ-like living and service. Ephesians 2:1-10, John 16:14, John 16:8, John 3:3, Titus 3:5, 1 Peter 1:3, Galatians 5:24-25, Galatians 5:16."
+        statement: "We believe that the Holy Spirit, in all that He does, glorifies the Lord Jesus Christ. He convicts the world regarding sin. He regenerates sinners, those who are otherwise dead in their sin by making them be born again and alive in Christ. In Him believers are baptized into union with Christ and adpoted as heirs in the family of God. He also indwells, illuminates, guides, equips, and empowers His church for Christ-like living and service. Ephesians 2:1-10, John 16:14, John 16:8, John 3:3, Titus 3:5, 1 Peter 1:3, Galatians 5:24-25, Galatians 5:16."
     },
     {
         title: 'The Church',
@@ -152,7 +152,7 @@ export const statementOfFaith = [
     },
     {
         title: 'Christian Living',
-        statement: "We believe that God's justifying grance must not be seperated from His sanctifying power and purpose. God commands us to love Him supremely and others sacrificially and to live out our faith with care for one another, compassion toward the poor, and justice for the oppressed. With God's word, the Spirit's power, and fervent prayer in Christ's name, we are to combat the spiritual forces of evil. In obedience to Christ's commission, we are to make disciples among all people, always bearing witness to the gospel in word and deed. Luke 10:27, Matthew 25:39-40, Matthew 29:19-20, Ephesians 6:12, 1 Thessalonais 1:4-5, Philippians 2:12, Ephesians 4:32, James 1:22."
+        statement: "We believe that God's justifying grace must not be seperated from His sanctifying power and purpose. God commands us to love Him supremely and others sacrificially and to live out our faith with care for one another, compassion toward the poor, and justice for the oppressed. With God's word, the Spirit's power, and fervent prayer in Christ's name, we are to combat the spiritual forces of evil. In obedience to Christ's commission, we are to make disciples among all people, always bearing witness to the gospel in word and deed. Luke 10:27, Matthew 25:39-40, Matthew 29:19-20, Ephesians 6:12, 1 Thessalonais 1:4-5, Philippians 2:12, Ephesians 4:32, James 1:22."
     },
     {
         title: "Christ's Return",
@@ -175,11 +175,7 @@ export const studying = [
     },
     {
         title: 'Wednesday Service',
-        desc: 'Join us for Wednesday night Bible study as we study through the book of Acts, "The History of the Church." Come and grow in your faith and in the grace and knowledge of the Lord and Savior Jesus Christ.'
-    },
-    {
-        title: 'Sunday School With Pastor Cook',
-        desc: "Pastor Cook is taking our Sunday School class through the book of 1st John. The theme of 1st John: A personal relationship with Christ is the foundation of the Christian life and out of this grows obedience to divine commands. Chapter 1: The truth about Christ. Chapter 2: The believer's lifestyle. Chapter 3: The believer's relationship to the world. Chapter 4: A message for God's children. Chapter 5: Love God and keep His commandments."
+        desc: 'The Book of Romans was written by the Apostle Paul to the church at Rome. Many great men throughout history have had their lives drastically changed by this amazing book as Luther called it, "The chief part of the New Testament and the very purest gospel." It was used to convert the heathen Augustine, who turned out to be one of the greatest church fathers in the fourth century. Come and grow in your faith and in the grace and knowledge of the Lord and savior Jesus Christ. To Him who was delivered over to death for our sins and was raised to life for our justification.'
     },
     {
         title: 'Sunday School with Pastor Curtis',

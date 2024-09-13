@@ -4,7 +4,6 @@ import "./landing.css";
 function Landing() {
   const [imgDimensions, setImgDimensions] = useState({ height: 0, width: 0 });
 
-  console.log(window.innerHeight - 43.5);
   const handleImgDimensions = (e) => {
     setImgDimensions({
       height: window.innerHeight - 43.5,
